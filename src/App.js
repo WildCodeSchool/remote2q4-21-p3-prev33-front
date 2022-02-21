@@ -1,9 +1,16 @@
 import './App.css';
+import Header from './components/Header/Header';
+import { Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      Welcome Prev33!
+      <Header />
+     
+      <Routes>
+
+      </Routes>
+      
     </div>
   );
 }
