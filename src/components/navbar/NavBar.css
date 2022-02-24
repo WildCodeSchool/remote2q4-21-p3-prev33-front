@@ -1,0 +1,117 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar {
+    display: flex;
+    font-size: xx-large;
+    margin-bottom: 42px;
+    justify-content: space-around;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-link {
+    align-items: center;
+    justify-items: space-between;
+    background-position: right bottom;
+    -webkit-border-radius: 0px 0px 30px 30px;
+    -moz-border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 30px 30px;;
+    border-bottom: 8px solid var(--main-color-1);
+    color: var(--main-color-3);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 10vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.selected, .navigation-link {
+    background: linear-gradient(to right, var(--main-color-1) 50%, transparent 0%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.navigation-link:hover {
+    color: var(--darken-main-color-1);
+} */
+
+
+
+
+.Navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigation-link {
+  display: flex;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #E19E20;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-size: 50px;
+  flex-direction: row;
+}
+
+.item-link {
+  color : #875300;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.link-formation {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown.active > .navigation-link,
+.navigation-link:hover {
+  color: #6F94BC;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + .25rem);
+  background-color: lightgray;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .navigation-link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-link {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  gap: 2rem;
+}
+
