@@ -1,8 +1,8 @@
 import React from 'react';
-import CardsFormations from '../components/cards/CardsFormations';
+import CardsFormations from '../../components/cards/CardsFormations';
 import './Home.css';
 
-import ImgIncendie from '../assets/img/ImgIncendie.jpg';
+import ImgIncendie from '../../assets/img/ImgIncendie.jpg';
 
 const home = () => {
   return (
