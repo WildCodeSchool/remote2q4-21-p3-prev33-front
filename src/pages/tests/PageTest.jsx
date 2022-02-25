@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
 import IncendieErp from "../../components/questionnaire_test/IncendieErp";
 import IncendieErt from "../../components/questionnaire_test/IncendieErt";
 import RisquePro from "../../components/questionnaire_test/RisquePro";
@@ -9,7 +8,6 @@ import "./PageTest.css";
 const PageTest = () => {
   return (
     <>
-      <Navbar />
       <div className="PageTest">
         <div className="pagetest-presentation">
           <h2 className="pagetest-h2">

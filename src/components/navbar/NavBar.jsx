@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
-import Home from "../../pages/home/Home";
-import Training from "../../pages/training/Training";
+import Home from "../../pages/Home/Home";
+import Training from "../../pages/Training/Training";
 import Audits from "../../pages/audits/Audits";
 import About from "../../pages/company/About";
 import PageTest from "../../pages/tests/PageTest";
-import SignUp from "../../pages/signup/SignUp";
 
 const NavBar = () => {
   const onSearch = (e) => {
@@ -129,10 +128,7 @@ const NavBar = () => {
       <NavLink to="/tests" className="navigation-link" element={<PageTest />}>
         Tests
       </NavLink>
-      <NavLink to="/signup" className="navigation-link" element={<SignUp />}>
-        Textes de lois et agréments
-      </NavLink>
-      <NavLink to="/Company" className="navigation-link" element={<About />}>
+      <NavLink to="/about" className="navigation-link" element={<About />}>
         A propos de nous
       </NavLink>
     </div>
