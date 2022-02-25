@@ -17,7 +17,7 @@ const Training = () => {
                 </div>
 
                 <div className='titre'>
-                    <h3>INTITULE</h3>
+                    <h3>INTITULE  coucou </h3>
                     <p>Texte à rajouter</p>
                 </div>
 
