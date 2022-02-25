@@ -1,0 +1,64 @@
+.CardsFormation {
+  width: 200px;
+  height: 260px;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  
+}
+
+.side {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card_face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card_face--front img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.card_face--front span {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    margin-left: 30%;
+    color: aliceblue;
+}
+
+.card_face--back {
+  background: rgb(147, 147, 149);
+  transform: rotateY(180deg);
+  
+}
+
+.card:hover {
+  transform:  rotateY(180deg) ;
+}
+/*scale(1.5) rotateY(180deg) translate(-200px, 50%) */
+
+.link-Card{
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  text-decoration: none;
+}
