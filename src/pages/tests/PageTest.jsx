@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import IncendieErp from "../components/questionnaire_test/IncendieErp";
-import IncendieErt from "../components/questionnaire_test/IncendieErt";
-import RisquePro from "../components/questionnaire_test/RisquePro";
-import Surete from "../components/questionnaire_test/Surete";
+import IncendieErp from "../../components/questionnaire_test/IncendieErp";
+import IncendieErt from "../../components/questionnaire_test/IncendieErt";
+import RisquePro from "../../components/questionnaire_test/RisquePro";
+import Surete from "../../components/questionnaire_test/Surete";
 import "./PageTest.css";
 
 const PageTest = () => {
