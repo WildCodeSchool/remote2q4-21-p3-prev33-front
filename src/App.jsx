@@ -1,3 +1,4 @@
+import react from "react";
 import "./App.css";
 import PageTest from "./pages/PageTest";
 
