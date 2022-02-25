@@ -1,0 +1,25 @@
+.Header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    background-color: rgb(192, 45, 26);
+    color: #fff;
+   
+}
+
+h1 {
+    font-size: 100%;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    
+}
+
+.logo-container {
+    max-width: 30%;
+    
+}
+
+.Header-logo {
+    width: 30%;  
+    display: flex;
+    justify-content: left;  
+}
