@@ -89,6 +89,8 @@
 .span-icon {
   position: relative;
   width: 15%;
+  left: 100%;
+  cursor: pointer;
 }
 
 .button-incendie {
