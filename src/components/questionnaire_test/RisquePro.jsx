@@ -23,7 +23,7 @@ const RisquePro = () => {
       {showScore ? (
         <div className="score-section">
           Votre résultat est de {score} sur {risquePro.length}
-          <p className="score-resultat">
+          <div className="score-resultat">
             <p>
               - 10 points: La prevention des risques professionnels est
               apparement prise en compte dans votre STE.
@@ -44,7 +44,7 @@ const RisquePro = () => {
               intervention d'assistant est necessaire pour identifier les écarts
               et vous proposer des solutions.
             </p>
-          </p>
+          </div>
           <button className="button-close" onClick={() => setShowScore(false)}>
             Fermer
           </button>

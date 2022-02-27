@@ -23,7 +23,7 @@ const IncendieErp = () => {
       {showScore ? (
         <div className="score-section">
           Votre résultat est de {score} sur {incendieErp.length}
-          <p className="score-resultat">
+          <div className="score-resultat">
             <p>
               - 10 points: La sécurité incendie est organisée, vous connaissez
               les consignes.
@@ -43,7 +43,7 @@ const IncendieErp = () => {
               intervention de Prev 33 semble nécessaire pour vous conseiller
               afin d'identifier les facteurs d'amélioration.
             </p>
-          </p>
+          </div>
           <button className="button-close" onClick={() => setShowScore(false)}>
             Fermer
           </button>

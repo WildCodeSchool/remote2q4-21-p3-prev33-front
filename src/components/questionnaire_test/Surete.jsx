@@ -23,7 +23,7 @@ const Surete = () => {
       {showScore ? (
         <div className="score-section">
           Votre résultat est de {score} sur {surete.length}
-          <p className="score-resultat">
+          <div className="score-resultat">
             <p>
               - 10 points: La sûreté est organisée, les vulnérabilités sont
               prises en comptes.
@@ -46,7 +46,7 @@ const Surete = () => {
               est sûrement nécessaire pour vous proposer une action de
               prévention et de protection.
             </p>
-          </p>
+          </div>
           <button className="button-close" onClick={() => setShowScore(false)}>
             Fermer
           </button>
