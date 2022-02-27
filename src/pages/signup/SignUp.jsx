@@ -91,7 +91,7 @@ export default function SignUp() {
           <span className="signup-span">
             Une question ? Un devis ? Un projet ?
           </span>
-          <br></br> Ou que vous en soyez dans vos démarches, nous répondrons
+          <br></br> Où que vous en soyez dans vos démarches, nous répondrons
           volontiers à vos besoins
         </p>
       </div>

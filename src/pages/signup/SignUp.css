@@ -23,8 +23,9 @@
 }
 
 .signup-container {
-  width: 700px;
+  width: 600px;
   background-color: white;
+  border-radius: 5px;
   margin: 30px auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   padding: 20px;
@@ -90,7 +91,7 @@
   }
 
   .signup-container {
-    width: 450px;
+    width: 380px;
     background-color: white;
     margin: 20px auto;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -102,7 +103,7 @@
     height: 40px;
     font-size: 22px;
     margin: 5px auto 0;
-    background: #4caf50;
+    background: #1e4a6d;
     color: white;
     border-radius: 5px;
     cursor: pointer;
