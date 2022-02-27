@@ -6,6 +6,24 @@ import "./About.css";
 export default function About() {
   return (
     <>
+      <a
+        href="http://www.prev33.fr/src/CV/CV.pdf"
+        target="_blank"
+        className="about-cv"
+        rel="noopener noreferrer"
+      >
+        <svg
+          className="about-svg"
+          width="3em"
+          height="3em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="#e19e20"
+            d="M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H48zm98.88 133.234c19.636 0 37.082 6.789 49.929 16.971c11.88 9.452 17.444 18.907 22.298 27.393l-33.923 16.949c-2.427-5.565-5.347-11.387-12.846-17.682c-8.248-6.552-16.478-8.484-23.524-8.484c-27.626 0-42.17 25.693-42.17 54.287c0 37.573 19.161 56.22 42.17 56.22c22.3 0 31.278-15.51 37.08-25.435L219.6 302.66c-6.315 9.926-12.374 19.635-25.95 29.069c-7.262 5.09-23.977 15.037-47.736 15.037C100.586 346.766 64 313.81 64 255.87c0-50.636 34.415-90.637 82.88-90.637zm75.483 5.328h45.565L303.31 292.24l35.125-121.678H384l-59.379 171.112H281.01l-58.647-171.111z"
+          ></path>
+        </svg>
+      </a>
       <div id="about-top"></div>
       <div className="about">
         <div className="about-card">
@@ -144,14 +162,6 @@ export default function About() {
               d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16zM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12zm9-2.586l-2.293 2.293a1 1 0 0 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1-1.414 1.414L13 9.414V17a1 1 0 1 1-2 0V9.414z"
             ></path>
           </svg>
-        </a>
-        <a
-          href="http://www.prev33.fr/src/CV/CV.pdf"
-          target="_blank"
-          className="about-cv"
-          rel="noopener noreferrer"
-        >
-          mon CV
         </a>
       </div>
     </>
