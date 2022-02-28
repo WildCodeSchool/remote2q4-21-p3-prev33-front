@@ -1,28 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./SignUp.css";
+import emailjs from "@emailjs/browser";
 
 export default function SignUp() {
-  const [submitted, setSubmitted] = useState(false);
+  const form = useRef();
 
-  const [values, setValues] = useState({
-    nameCompany: "",
-    typeActivity: "",
-    cityActivity: "",
-    nameContact: "",
-    email: "",
-    phone: "",
-    textarea: "",
-  });
+  const [submitted, setSubmitted] = useState(false);
+  const [nameCompany, setNameCompany] = useState("");
+  const [typeActivity, setTypeActivity] = useState("");
+  const [cityActivity, setCityActivity] = useState("");
+  const [nameContact, setNameContact] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_p5e23gs",
+        "template_htqfrek",
+        form.current,
+        "-XsXm8CBJ-jyv6f5n"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
     if (
-      values.nameCompany &&
-      values.typeActivity &&
-      values.cityActivity &&
-      values.nameContact &&
-      values.email &&
-      values.phone
+      nameCompany &&
+      typeActivity &&
+      cityActivity &&
+      nameContact &&
+      email &&
+      phone &&
+      message
     ) {
       setSubmitted(true);
     }
@@ -30,58 +48,37 @@ export default function SignUp() {
 
   const handleNameCompanyInputChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      nameCompany: e.target.value,
-    }));
+    setNameCompany(e.target.value);
   };
 
   const handleTypeActivityInputChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      typeActivity: e.target.value,
-    }));
+    setTypeActivity(e.target.value);
   };
 
   const handleCityActivityInputChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      cityActivity: e.target.value,
-    }));
+    setCityActivity(e.target.value);
   };
 
   const handleNameContactInputChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      nameContact: e.target.value,
-    }));
+    setNameContact(e.target.value);
   };
 
   const handleEmailInputChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      email: e.target.value,
-    }));
+    setEmail(e.target.value);
   };
 
   const handlePhoneInputChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      phone: e.target.value,
-    }));
+    setPhone(e.target.value);
   };
 
-  const handleTextAreaChange = (e) => {
+  const handleMessageChange = (e) => {
     e.persist();
-    setValues((values) => ({
-      ...values,
-      textarea: e.target.value,
-    }));
+    setMessage(e.target.value);
   };
 
   return (
@@ -98,7 +95,11 @@ export default function SignUp() {
       <h1 className="signup-h1">Formulaire de contact</h1>
       <div className="signup-form">
         <div className="signup-container">
-          <form className="signup-register-form" onSubmit={handleSubmit}>
+          <form
+            ref={form}
+            className="signup-register-form"
+            onSubmit={handleSubmit}
+          >
             {submitted && (
               <div className="success-message">
                 Validé ! Merci de votre visite
@@ -109,11 +110,12 @@ export default function SignUp() {
               className="signup-form-field"
               type="text"
               placeholder="Nom de l'entreprise"
-              name="name-company"
-              value={values.nameCompany}
+              name="nameCompany"
+              value={nameCompany}
               onChange={handleNameCompanyInputChange}
+              required
             />
-            {submitted && !values.nameCompany && (
+            {submitted && !nameCompany && (
               <span className="signup-span" id="name-company-error">
                 Nom de l'entreprise
               </span>
@@ -123,11 +125,12 @@ export default function SignUp() {
               className="signup-form-field"
               type="text"
               placeholder="Type d'activité"
-              name="type-activity"
-              value={values.typeActivity}
+              name="typeActivity"
+              value={typeActivity}
               onChange={handleTypeActivityInputChange}
+              required
             />
-            {submitted && !values.typeActivity && (
+            {submitted && !typeActivity && (
               <span className="signup-span" id="type-activity-error">
                 Type d'activité
               </span>
@@ -137,11 +140,12 @@ export default function SignUp() {
               className="signup-form-field"
               type="text"
               placeholder="Commune d'activité"
-              name="city-activity"
-              value={values.cityActivity}
+              name="cityActivity"
+              value={cityActivity}
               onChange={handleCityActivityInputChange}
+              required
             />
-            {submitted && !values.cityActivity && (
+            {submitted && !cityActivity && (
               <span className="signup-span" id="city-activity-error">
                 Commune d'activité
               </span>
@@ -151,11 +155,12 @@ export default function SignUp() {
               className="signup-form-field"
               type="text"
               placeholder="Nom du contact"
-              name="name-contact"
-              value={values.nameContact}
+              name="nameContact"
+              value={nameContact}
               onChange={handleNameContactInputChange}
+              required
             />
-            {submitted && !values.nameContact && (
+            {submitted && !nameContact && (
               <span className="signup-span" id="name-contact-error">
                 Nom du contact
               </span>
@@ -166,10 +171,11 @@ export default function SignUp() {
               type="text"
               placeholder="Adresse email"
               name="email"
-              value={values.email}
+              value={email}
               onChange={handleEmailInputChange}
+              required
             />
-            {submitted && !values.email && (
+            {submitted && !email && (
               <span class="signup-span" id="email-error">
                 Adresse email
               </span>
@@ -180,10 +186,11 @@ export default function SignUp() {
               type="text"
               placeholder="Numéro de téléphone du contact"
               name="phone"
-              value={values.phone}
+              value={phone}
               onChange={handlePhoneInputChange}
+              required
             />
-            {submitted && !values.phone && (
+            {submitted && !phone && (
               <span className="signup-span" id="phone-error">
                 Numéro de téléphone du contact
               </span>
@@ -191,14 +198,15 @@ export default function SignUp() {
             <textarea
               className="signup-textarea"
               placeholder=" Laissez-nous un message..."
-              value={values.textarea}
-              onChange={handleTextAreaChange}
+              name="message"
+              value={message}
+              onChange={handleMessageChange}
               required
               rows={10}
               cols={5}
             />
 
-            <button className="signup-button" type="submit">
+            <button className="signup-button" type="submit" value="Send">
               Envoyer
             </button>
           </form>
