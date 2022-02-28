@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 import NavBar from "./components/navbar/NavBar";
-import Home from "./pages/Home/Home";
-import Training from "./pages/Training/Training";
+import Home from "./pages/home/Home";
+import Training from "./pages/training/Training";
 import Audits from "./pages/audits/Audits";
 import PageTest from "./pages/tests/PageTest";
 import About from "./pages/company/About";

@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
-import Home from "../../pages/Home/Home";
-import Training from "../../pages/Training/Training";
+import Home from "../../pages/home/Home";
+import Training from "../../pages/training/Training";
 import Audits from "../../pages/audits/Audits";
 import About from "../../pages/company/About";
 import PageTest from "../../pages/tests/PageTest";
