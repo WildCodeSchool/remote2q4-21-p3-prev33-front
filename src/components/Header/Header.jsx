@@ -26,11 +26,7 @@ function Header() {
       </div>
       <div className="Bouton">
         <button class="favorite styled" type="button">
-          <NavLink
-            to="/signup"
-            className="navigation-link"
-            element={<SignUp />}
-          >
+          <NavLink to="/signup" className="header-link" element={<SignUp />}>
             Contactez-nous
           </NavLink>
         </button>
