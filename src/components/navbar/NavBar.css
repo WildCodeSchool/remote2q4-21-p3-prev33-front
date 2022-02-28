@@ -1,4 +1,3 @@
-
 .Navbar {
   position: relative;
   display: flex;
@@ -10,7 +9,7 @@
   background: none;
   border: none;
   text-decoration: none;
-  color: #E19E20;
+  color: #e19e20;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
@@ -20,7 +19,7 @@
 }
 
 .item-link {
-  color : #875300;
+  color: #875300;
   font-size: 30px;
   text-decoration: none;
 }
@@ -32,7 +31,7 @@
 
 .dropdown.active > .navigation-link,
 .navigation-link:hover {
-  color: #6F94BC;
+  color: #6f94bc;
 }
 
 .dropdown {
@@ -41,15 +40,16 @@
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + .25rem);
+  top: calc(100% + 0.25rem);
   background-color: lightgray;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  z-index: 10;
 }
 
 .dropdown.active > .navigation-link + .dropdown-menu {
@@ -61,7 +61,7 @@
 .dropdown-link {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
 }
 
 .information-grid {
@@ -69,4 +69,3 @@
   grid-template-columns: repeat(1, max-content);
   gap: 2rem;
 }
-
