@@ -1,0 +1,19 @@
+.CardsQuiz{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border: solid;
+   
+}
+
+
+.quiz img {
+    width: 200px;
+    height: auto;
+    margin-top: 2vh;
+}

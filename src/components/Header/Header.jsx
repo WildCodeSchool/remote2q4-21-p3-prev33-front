@@ -22,7 +22,7 @@ function Header() {
         <p>Sûreté</p>
       </div>
       <div className='Bouton'>
-        <button class="favorite styled" type="button">
+        <button className="favorite styled" type="button">
           Contactez-nous
         </button>
       </div>
