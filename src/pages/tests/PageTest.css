@@ -86,13 +86,6 @@
   justify-content: space-between;
 }
 
-.span-icon {
-  position: relative;
-  width: 15%;
-  left: 100%;
-  cursor: pointer;
-}
-
 .button-incendie {
   width: 30%;
   font-size: 16px;
