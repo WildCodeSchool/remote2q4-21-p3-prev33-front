@@ -6,6 +6,12 @@ const Surete = () => {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
+  const resetScore = () => {
+    setScore(0);
+    setShowScore(false);
+    setCurrentQuestion(0);
+  };
+
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
@@ -47,7 +53,7 @@ const Surete = () => {
               prévention et de protection.
             </p>
           </div>
-          <button className="button-close" onClick={() => setShowScore(false)}>
+          <button className="button-close" onClick={resetScore}>
             Fermer
           </button>
         </div>
@@ -76,14 +82,6 @@ const Surete = () => {
                 </button>
               )
             )}
-            <span className="span-icon" onClick={() => setCurrentQuestion(0)}>
-              <svg width="2.5em" height="1.5em" viewBox="0 0 24 24">
-                <path
-                  d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </span>
           </div>
         </>
       )}
