@@ -54,12 +54,16 @@
   display: flex;
   flex-direction: column;
   font-size: 24px;
+  padding-top: 5px;
   align-items: center;
   justify-content: center;
+  border: 5px solid #bcda0a;
+  border-radius: 5px;
 }
 
 .score-resultat {
   font-size: 0.8em;
+  padding: 10px;
 }
 
 .question-section {
@@ -166,7 +170,7 @@
   margin: 5px 0;
   justify-content: center;
   align-items: center;
-  border: 5px solid #875300;
+  border: 3px solid #bcda0a;
   cursor: pointer;
   overflow: hidden;
 }
@@ -176,18 +180,6 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .PageTest {
-    margin: 50px auto 0;
-  }
-  .pagetest-container {
-    display: grid;
-    grid-template-areas: "a";
-    grid-gap: 10px;
-    grid-auto-columns: auto;
-    justify-content: center;
-    align-items: center;
-  }
-
   .pagetest-h2 {
     font-size: 20px;
   }
@@ -198,9 +190,8 @@ button:hover {
   }
 
   .test-card {
-    width: 100%;
-    min-height: 100px;
-    margin: 10px;
+    width: 80%;
+    margin: auto;
   }
   .pagetest-presentation {
     width: 80%;
@@ -209,8 +200,50 @@ button:hover {
     border: 2px solid #252d4a;
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
   }
-  .question-title {
+  .pagetest-container {
+    display: grid;
+    grid-template-areas: "a";
+    grid-gap: 10px;
+    grid-auto-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-count {
     font-size: 20px;
+  }
+
+  .question-title.incendie {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #da0a0a;
+    border-radius: 0;
+  }
+
+  .question-title.surete {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #4caf50;
+    border-radius: 0;
+  }
+
+  .question-title.risquePro {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #03a9f4;
+    border-radius: 0;
   }
   .score-section {
     font-size: 20px;
@@ -218,24 +251,13 @@ button:hover {
   .score-resultat {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 0.7em;
+    font-size: 0.9rem;
     line-height: 1.4em;
+    letter-spacing: 0.1em;
   }
 
-  .question-count {
-    font-size: 22px;
-  }
-  .button-incendie {
-    width: 50%;
-    font-size: 14px;
-    justify-content: center;
-  }
-  .button-surete {
-    width: 50%;
-    font-size: 14px;
-    justify-content: center;
-  }
-
+  .button-incendie,
+  .button-surete,
   .button-risquePro {
     width: 50%;
     font-size: 14px;
