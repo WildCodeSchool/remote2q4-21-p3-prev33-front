@@ -1,14 +1,14 @@
-import React from "react";
 import "./App.css";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Header from './components/header/Header';
-import NavBar from './components/navbar/NavBar';
-import Home from './pages/home/Home';
-import Audits from './pages/audits/Audits';
-import Tests from './pages/tests/Tests';
-import Laws from './pages/laws/Laws';
-import Company from './pages/company/Company';
-import Training from './pages/training/Training';
+import Header from "./components/header/Header";
+import NavBar from "./components/navbar/NavBar";
+import Home from "./pages/home/Home";
+import Training from "./pages/training/Training";
+import Audits from "./pages/audits/Audits";
+import PageTest from "./pages/tests/PageTest";
+import About from "./pages/company/About";
+import SignUp from "./pages/signup/SignUp";
 
 function App() {
   return (
@@ -17,11 +17,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/formation/:id" element={<Training />} />
-        <Route path="/audits" element={<Audits />}></Route>
-        <Route path="/tests" element={<Tests />}></Route>
-        <Route path="/laws" element={<Laws />}></Route>
-        <Route path="/company" element={<Company />}></Route>
+        <Route path="/formation" element={<Training />} />
+        <Route path="/audits" element={<Audits />} />
+        <Route path="/tests" element={<PageTest />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
