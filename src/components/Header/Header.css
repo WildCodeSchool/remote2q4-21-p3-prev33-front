@@ -1,63 +1,70 @@
 .Header {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    background-color: #E19E20;
-    color: #fff;
-    line-height: 0px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e19e20;
+  color: #fff;
+  line-height: 0px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 50px;
 }
 
 .Header-logo {
-    width: 300%;
-    padding: 10% 0% 10%;
+  width: 300%;
+  padding: 10% 0% 10%;
 }
 
 .text1 {
-    text-align: left;
-    font-size: xx-large;
-
+  text-align: left;
+  font-size: xx-large;
 }
 
 .text2 {
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .Logo {
-    width: 50px;
+  width: 50px;
 }
 
 .styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: #1E4A6D;
-    background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-        inset -2px -2px 3px rgba(0, 0, 0, .6);
+  border: 0;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #1e4a6d;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .styled:hover {
-    background-color: #6F94BC;
+  background-color: #6f94bc;
 }
 
 .styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .Bouton {
-    padding-left: 70px;
+  padding-left: 70px;
+}
+.header-link {
+  text-decoration: none;
+  color: #e19e20;
+  cursor: pointer;
+  font-size: 25px;
 }
