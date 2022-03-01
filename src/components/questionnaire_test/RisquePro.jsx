@@ -25,7 +25,7 @@ const RisquePro = () => {
     }
   };
   return (
-    <div className="card">
+    <div className="test-card">
       {showScore ? (
         <div className="score-section">
           Votre résultat est de {score} sur {risquePro.length}
@@ -60,9 +60,8 @@ const RisquePro = () => {
           <div className="question-section">
             <div className="question-count">
               <span>Question {currentQuestion + 1}</span>/{risquePro.length}
-              <span className="question-title">
-                {" "}
-                - Domaine Risques Professionnels
+              <span className="question-title risquePro">
+                Domaine Risques Professionnels
               </span>
             </div>
             <div className="question-text">

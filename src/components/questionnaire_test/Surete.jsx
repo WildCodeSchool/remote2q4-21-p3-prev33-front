@@ -25,7 +25,7 @@ const Surete = () => {
     }
   };
   return (
-    <div className="card">
+    <div className="test-card">
       {showScore ? (
         <div className="score-section">
           Votre résultat est de {score} sur {surete.length}
@@ -62,7 +62,7 @@ const Surete = () => {
           <div className="question-section">
             <div className="question-count">
               <span>Question {currentQuestion + 1}</span>/{surete.length}
-              <span className="question-title"> - Domaine Sûreté</span>
+              <span className="question-title surete">Domaine Sûreté</span>
             </div>
             <div className="question-text">
               {surete[currentQuestion].questionText}

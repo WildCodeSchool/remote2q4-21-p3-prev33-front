@@ -4,10 +4,11 @@
 }
 
 .pagetest-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas: "a a";
+  grid-gap: 20px;
+  grid-auto-columns: auto;
   justify-content: center;
-  align-items: center;
 }
 
 .pagetest-presentation {
@@ -34,7 +35,7 @@
   font-weight: 600;
 }
 
-.card {
+.test-card {
   display: flex;
   flex-direction: column;
   background-color: #1e4a6d;
@@ -71,8 +72,31 @@
   font-size: 28px;
 }
 
-.question-title {
-  font-size: 22px;
+.question-title.incendie {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 25px;
+  border: 3px solid #da0a0a;
+  border-radius: 5px;
+}
+
+.question-title.surete {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 25px;
+  border: 3px solid #4caf50;
+  border-radius: 5px;
+}
+
+.question-title.risquePro {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 25px;
+  border: 3px solid #03a9f4;
+  border-radius: 5px;
 }
 
 .question-text {
@@ -153,8 +177,17 @@ button:hover {
 
 @media screen and (max-width: 767px) {
   .PageTest {
-    margin: 150px auto 0;
+    margin: 50px auto 0;
   }
+  .pagetest-container {
+    display: grid;
+    grid-template-areas: "a";
+    grid-gap: 10px;
+    grid-auto-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
   .pagetest-h2 {
     font-size: 20px;
   }
@@ -163,8 +196,9 @@ button:hover {
     font-size: 16px;
     text-align: center;
   }
-  .card {
-    width: 800%;
+
+  .test-card {
+    width: 100%;
     min-height: 100px;
     margin: 10px;
   }
@@ -211,10 +245,5 @@ button:hover {
   .button-close {
     width: 50%;
     font-size: 14px;
-  }
-
-  .span-icon {
-    left: 95%;
-    cursor: pointer;
   }
 }

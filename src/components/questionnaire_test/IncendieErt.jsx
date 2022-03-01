@@ -25,7 +25,7 @@ const IncendieErt = () => {
     }
   };
   return (
-    <div className="card">
+    <div className="test-card">
       {showScore ? (
         <div className="score-section">
           Votre résultat est de {score} sur {incendieErt.length}
@@ -59,7 +59,9 @@ const IncendieErt = () => {
           <div className="question-section">
             <div className="question-count">
               <span>Question {currentQuestion + 1}</span>/{incendieErt.length}
-              <span className="question-title"> - Domaine Incendie ERT</span>
+              <span className="question-title incendie">
+                Domaine Incendie ERT
+              </span>
             </div>
             <div className="question-text">
               {incendieErt[currentQuestion].questionText}
