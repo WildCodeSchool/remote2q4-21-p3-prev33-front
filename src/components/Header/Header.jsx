@@ -24,17 +24,11 @@ function Header() {
         <br />
         <p>Sûreté</p>
       </div>
-<<<<<<< HEAD
-      <div className='Bouton'>
-        <button className="favorite styled" type="button">
-          Contactez-nous
-=======
       <div className="Bouton">
         <button class="favorite styled" type="button">
           <NavLink to="/signup" className="header-link" element={<SignUp />}>
             Contactez-nous
           </NavLink>
->>>>>>> dev
         </button>
       </div>
     </div>

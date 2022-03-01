@@ -23,7 +23,7 @@ const Cards = ({ category, name, image }) => {
 
   return (
     <div className="Cards">
-      <div className={flipCard? 'card' : 'card-flip'}>
+      <div className={flipCard? 'card-home' : 'card-flip'}>
         <div className="side card_face--front">
           <span className="title-card">{name}</span>
           <img onClick={returnedTheCard} src={image} alt={name} />
