@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import "./NavBar.css";
+import "./NavBar.scss";
 import Home from '../../pages/home/Home';
-import Formation from '../../pages/formation/Formation';
+import Training from '../../pages/training/Training';
 import Audits from '../../pages/audits/Audits'
 import Company from '../../pages/company/Company';
 import Tests from '../../pages/tests/Tests';
@@ -10,45 +10,47 @@ import Laws from '../../pages/laws/Laws';
 
 const NavBar = () => {
     
-    const onSearch = (e) => {
-        e.preventDefault();
-        const isDropdownButton = e.target.matches("[data-dropdown-button]")
-        if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+    // const onSearch = (e) => {
+    //     e.preventDefault();
+    //     const isDropdownButton = e.target.matches("[data-dropdown-button]")
+    //     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
     
-        let currentDropdown
-        if (isDropdownButton) {
-            currentDropdown = e.target.closest("[data-dropdown]")
-            currentDropdown.classList.toggle("active")
-        }
+    //     let currentDropdown
+    //     if (isDropdownButton) {
+    //         currentDropdown = e.target.closest("[data-dropdown]")
+    //         currentDropdown.classList.toggle("active")
+    //     }
     
-        document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
-            if (dropdown === currentDropdown) return
-            dropdown.classList.remove("active")
-        })
-    }
+    //     document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+    //         if (dropdown === currentDropdown) return
+    //         dropdown.classList.remove("active")
+    //     })
+    // }
+
+    // onClick={onSearch}
 
     return (
         <div className='Navbar'>
-            <NavLink to="/" className='navigation-link' element={<Home />}>Home</NavLink>
+            <NavLink to="/" className='navigation-link' element={<Home />}>Accueil</NavLink>
             <div className="dropdown" data-dropdown>
-                <button onMouseEnter={onSearch} className="navigation-link" data-dropdown-button>Formation</button>
-                    <div className='dropdown-menu information-grid'>
+                <button     className="navigation-button" data-dropdown-button>Formation</button>
+                    <div className='dropdown-menu information-grid' >
                         <div>
-                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Formation />}>Incendie</NavLink></div>
+                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Training />}>Incendie</NavLink></div>
                         </div>
                         <div>
-                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Formation />}>Risques professionnels</NavLink></div>
+                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Training />}>Risques professionnels</NavLink></div>
                         </div>
                         <div>
-                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Formation />}>Sûreté</NavLink></div>
+                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Training />}>Sûreté</NavLink></div>
                         </div>
                         <div>
-                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Formation />}>Formations spécifiques</NavLink></div>
+                            <div className='dropdown-link'><NavLink to="/Formation" className='item-link' element={<Training />}>Formations spécifiques</NavLink></div>
                         </div>
                     </div>
             </div>
             <div className="dropdown" data-dropdown>
-                <button onMouseEnter={onSearch} className="navigation-link" data-dropdown-button>Audits et conseils</button>
+                <button        className="navigation-button" data-dropdown-button>Audits et conseils</button>
                     <div className='dropdown-menu information-grid'>
                         <div>
                             <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Prévention incendie</NavLink></div>
