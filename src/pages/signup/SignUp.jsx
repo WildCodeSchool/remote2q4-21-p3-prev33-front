@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./SignUp.css";
 import emailjs from "@emailjs/browser";
+import Map from "../../components/map/Map";
 
 export default function SignUp() {
   const form = useRef();
@@ -84,6 +85,7 @@ export default function SignUp() {
   return (
     <>
       <div className="signup-header">
+        <Map />
         <p className="signup-p">
           <span className="signup-span">
             Une question ? Un devis ? Un projet ?

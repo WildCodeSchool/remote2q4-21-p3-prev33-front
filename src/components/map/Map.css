@@ -1,0 +1,13 @@
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.map-container {
+  position: inherit;
+  height: 400px;
+  width: 100%;
+  bottom: -275px;
+}
