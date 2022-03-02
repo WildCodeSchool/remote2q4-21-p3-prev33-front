@@ -1,13 +1,11 @@
 .formation {
     display: flex;
     justify-content: space-around;
-    
-}
+ }
 
 .advice {
     display: flex;
     justify-content: space-around;
-    
 }
 
 .title {
