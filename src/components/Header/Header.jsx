@@ -18,11 +18,7 @@ function Header() {
         <p>votre outil de travail"</p>
       </div>
       <div className="header-text2">
-        <p>Incendie&nbsp;</p>
-        <br />
-        <p>&nbsp;Risques Professionnels&nbsp;</p>
-        <br />
-        <p>Sûreté</p>
+        <p>Incendie - Risques Professionnels - Sûreté</p>
       </div>
       <div className="Bouton">
         <button class="favorite styled" type="button">
