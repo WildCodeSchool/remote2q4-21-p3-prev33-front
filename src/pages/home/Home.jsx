@@ -1,18 +1,16 @@
-import React from 'react'
-import imagePompier from '../../assets/pompier.jpg'
-import './Home.css'
+import React from "react";
+import CardsFormation from "../../components/cards/CardsFormation";
 
-const Home = () => {
-    return (
-        <div className='home'>
-            <h1>Accueil</h1>
-            <div className="img">
-                <img className='imagePompier' src={imagePompier} alt="logo" />
-            </div>
+import "./Home.css";
 
-        </div>
+const home = () => {
+  return (
+    <div className="Home">
+      <div className="training">
+        <CardsFormation />
+      </div>
+    </div>
+  );
+};
 
-    )
-}
-
-export default Home
+export default home;

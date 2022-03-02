@@ -1,3 +1,9 @@
-.imagePompier {
-  width: 30%;
+.title-formation{
+    text-align: center;
+    margin: 6vh;
+}
+
+.formation-card {
+    display: flex;
+    justify-content: space-around; 
 }
