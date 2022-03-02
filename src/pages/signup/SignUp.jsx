@@ -85,7 +85,6 @@ export default function SignUp() {
   return (
     <>
       <div className="signup-header">
-        <Map />
         <p className="signup-p">
           <span className="signup-span">
             Une question ? Un devis ? Un projet ?
@@ -214,6 +213,7 @@ export default function SignUp() {
           </form>
           <span>Tous les champs sont à remplir</span>
         </div>
+        <Map />
       </div>
     </>
   );
