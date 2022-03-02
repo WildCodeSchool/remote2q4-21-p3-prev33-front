@@ -15,35 +15,19 @@ const NavBar = () => {
             <div className="dropdown" data-dropdown>
                 <button className="navigation-button" data-dropdown-button>Formation</button>
                 <div className='dropdown-menu information-grid' >
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Incendie</NavLink></div>
-                    </div>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Risques professionnels</NavLink></div>
-                    </div>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Sûreté</NavLink></div>
-                    </div>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Formations spécifiques</NavLink></div>
-                    </div>
+                    <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Incendie</NavLink></div>
+                    <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Risques professionnels</NavLink></div>
+                    <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Sûreté</NavLink></div>
+                    <div className='dropdown-link'><NavLink to="/formation" className='item-link' element={<Training />}>Formations spécifiques</NavLink></div>
                 </div>
             </div>
             <div className="dropdown" data-dropdown>
                 <button className="navigation-button" data-dropdown-button>Audits et conseils</button>
                 <div className='dropdown-menu information-grid'>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Prévention incendie</NavLink></div>
-                    </div>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Assistance sûreté</NavLink></div>
-                    </div>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Assistance risques professionnels</NavLink></div>
-                    </div>
-                    <div>
-                        <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Conseils</NavLink></div>
-                    </div>
+                    <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Prévention incendie</NavLink></div>
+                    <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Assistance sûreté</NavLink></div>
+                    <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Assistance risques professionnels</NavLink></div>
+                    <div className='dropdown-link'><NavLink to="/audits" className='item-link' element={<Audits />}>Conseils</NavLink></div>
                 </div>
             </div>
             <NavLink to="/tests" className="navigation-link" element={<PageTest />}>Tests</NavLink>

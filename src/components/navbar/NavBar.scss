@@ -37,6 +37,7 @@
 
 .dropdown {
   position: relative;
+  height: 8rem;
 }
 
 .dropdown-menu {
@@ -70,7 +71,7 @@
 .information-grid {
   display: grid;
   grid-template-columns: repeat(1, max-content);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .dropdown:hover {
