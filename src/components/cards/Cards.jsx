@@ -36,8 +36,7 @@ const Cards = ({ category, name, image }) => {
               <Link to="/" className="link">
                 {training.title}
               </Link>
-            
-          ))}
+            ))}
           </div>
         </div>
       </div>
