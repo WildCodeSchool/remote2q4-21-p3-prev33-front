@@ -13,14 +13,14 @@ function Header() {
         </Link>
       </div>
 
-      <div className="text1">
+      <div className="header-text1">
         <p>"Protégeons, ensemble,</p>
         <p>votre outil de travail"</p>
       </div>
-      <div className="text2">
-        <p>Incendie</p>
+      <div className="header-text2">
+        <p>Incendie&nbsp;</p>
         <br />
-        <p>Risques Professionnels</p>
+        <p>&nbsp;Risques Professionnels&nbsp;</p>
         <br />
         <p>Sûreté</p>
       </div>
