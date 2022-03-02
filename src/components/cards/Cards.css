@@ -2,9 +2,7 @@
   width: 200px;
   height: 300px;
   perspective: 600px;
-  
-
-}
+ }
 
 .card-home {
   width: 100%;
@@ -65,9 +63,6 @@
   border-radius: 5px;
   
 }
-
-
-
 
 .link-card{
   text-align: center;
