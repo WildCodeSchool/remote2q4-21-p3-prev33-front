@@ -85,14 +85,33 @@
   }
 }
 
+.navbar-menu-icon {
+  position: absolute;
+  font-size: 22px;
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .Navbar {
-    display: none;
+    display: block;
     position: absolute;
     background-color: black;
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .Navbar.active {
+    display: block;
+    position: absolute;
+    background-color: black;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    left: 18%;
+    transition: all 0.5s ease;
   }
 
   .navigation-link,
@@ -112,5 +131,11 @@
 
   .information-grid {
     display: none;
+  }
+
+  .navbar-menu-icon {
+    font-size: 22px;
+    left: 280px;
+    display: block;
   }
 }
