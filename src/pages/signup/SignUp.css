@@ -77,31 +77,31 @@
 
 @media screen and (max-width: 767px) {
   .signup-p {
-    margin-top: 110px;
+    margin-top: 70px;
   }
   .signup-span {
     margin: 5px auto;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
   }
   .signup-h1 {
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .signup-container {
-    width: 380px;
+    width: 300px;
     background-color: white;
     margin: 20px auto;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    padding: 15px;
+    padding: 0;
   }
 
   .signup-button {
-    width: 100px;
-    height: 40px;
-    font-size: 22px;
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
     margin: 5px auto 0;
     background: #1e4a6d;
     color: white;

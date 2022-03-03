@@ -95,28 +95,28 @@
   .Navbar {
     display: block;
     position: absolute;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
     left: -100%;
     transition: all 0.5s ease;
+    z-index: 100;
   }
 
   .Navbar.active {
     display: block;
     position: absolute;
     background-color: black;
-    flex-direction: column;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
-    left: 18%;
+    left: 0;
     transition: all 0.5s ease;
   }
 
   .navigation-link,
   .navigation-button {
-    background: black;
+    background: transparent;
     padding: 10px 10px;
     font-size: 20px;
   }
@@ -126,7 +126,7 @@
   }
 
   .dropdown {
-    height: 40px;
+    height: min-content;
   }
 
   .information-grid {
@@ -135,7 +135,8 @@
 
   .navbar-menu-icon {
     font-size: 22px;
-    left: 280px;
+    left: 90%;
+    top: 30px;
     display: block;
   }
 }

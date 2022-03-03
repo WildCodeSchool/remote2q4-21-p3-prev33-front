@@ -14,8 +14,8 @@ function Header() {
       </div>
 
       <div className="header-text1">
-        <p>"Protégeons, ensemble,</p>
-        <p>votre outil de travail"</p>
+        <p>"Protégeons, ensemble,&nbsp;</p>
+        <p> votre outil de travail"</p>
       </div>
       <div className="header-text2">
         <p>Incendie - Risques Professionnels - Sûreté</p>

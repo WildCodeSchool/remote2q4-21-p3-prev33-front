@@ -1,17 +1,38 @@
-.CardsQuiz{
-    display: flex;
-    justify-content: space-between;
+.CardsQuiz {
+  display: flex;
+  justify-content: space-between;
 }
 
-.quiz{
+.quiz {
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  border: solid;
+}
+
+.quiz img {
+  width: 200px;
+  height: auto;
+  margin-top: 2vh;
+}
+
+@media screen and (max-width: 767px) {
+  .CardsQuiz {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .quiz {
     width: 200px;
     height: 300px;
     text-align: center;
     border: solid;
- }
+  }
 
-.quiz img {
+  .quiz img {
     width: 200px;
     height: auto;
     margin-top: 2vh;
+  }
 }

@@ -71,3 +71,51 @@
   font-size: 25px;
   padding: 18px 0;
 }
+
+@media screen and (max-width: 767px) {
+  .Header {
+    width: 100%;
+    display: block;
+  }
+
+  .Header-logo {
+    width: 70px;
+    top: 0;
+    padding: 10px;
+  }
+
+  .header-text1 {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    line-height: 0.9rem;
+    transform: translate(-40%, -50%);
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .header-text2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    line-height: 1rem;
+    transform: translate(-40%, -120%);
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .header-link {
+    font-size: 12px;
+  }
+  .styled {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .Bouton {
+    margin: 5px auto;
+  }
+}
