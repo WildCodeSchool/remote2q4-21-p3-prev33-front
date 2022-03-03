@@ -21,7 +21,7 @@ function Header() {
         <p>Incendie - Risques Professionnels - Sûreté</p>
       </div>
       <div className="Bouton">
-        <button class="favorite styled" type="button">
+        <button className="favorite styled" type="button">
           <NavLink to="/signup" className="header-link" element={<SignUp />}>
             Contactez-nous
           </NavLink>
