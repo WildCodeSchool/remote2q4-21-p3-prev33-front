@@ -95,7 +95,7 @@ const NavBar = () => {
         </NavLink>
       </div>
       <div className="navbar-menu-icon" onClick={handleClick}>
-        <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        <i className={click ? "fas fa-bars" : "fas fa-times"} />
       </div>
     </>
   );
