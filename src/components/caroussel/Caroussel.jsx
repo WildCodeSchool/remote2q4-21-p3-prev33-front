@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { SliderData } from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./Caroussel.css";
 
-const Caroussel = () => {
+const Caroussel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
-  const length = SliderData.length;
+  const length = slides.length;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-    return () => clearInterval(interval);
-  });
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -22,31 +21,27 @@ const Caroussel = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(SliderData) || SliderData.length <= 0) {
+  if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
 
   return (
-    <div className="slider">
+    <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
+      {slides.map((slide, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
             key={index}
           >
             {index === current && (
-              <img
-                src={slide.image}
-                alt="travel image"
-                className="slide-image"
-              />
+              <img src={slide.image} alt="travel image" className="image" />
             )}
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };
 
