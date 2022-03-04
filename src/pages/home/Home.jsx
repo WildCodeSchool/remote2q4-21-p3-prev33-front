@@ -1,16 +1,15 @@
 import React from "react";
+import Caroussel from "../../components/caroussel/Caroussel";
 import CardsFormation from "../../components/cards/CardsFormation";
-
 import "./Home.css";
 
-const home = () => {
+const Home = () => {
   return (
-    <div className="Home">
-      <div className="home-cards">
-        <CardsFormation />
-      </div>
+    <div className="home">
+      <Caroussel />
+      <CardsFormation />
     </div>
   );
 };
 
-export default home;
+export default Home;
