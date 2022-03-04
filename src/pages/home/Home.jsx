@@ -1,16 +1,21 @@
-import React from "react";
-import CardsFormation from "../../components/cards/CardsFormation";
+import React from 'react'
+import Caroussel from '../../components/caroussel/Caroussel';
+import { SliderData } from '../../components/caroussel/SliderData';
+import imagePompier from '../../assets/pompier.jpg'
+import './Home.css'
 
-import "./Home.css";
+const Home = () => {
+    return (
+        <div className='home'>
+            <h1>Accueil</h1>
+            <div className="img">
+                <Caroussel slides={SliderData} />
+                <img className='imagePompier' src={imagePompier} alt="logo" />
+            </div>
 
-const home = () => {
-  return (
-    <div className="Home">
-      <div className="training">
-        <CardsFormation />
-      </div>
-    </div>
-  );
-};
+        </div>
 
-export default home;
+    )
+}
+
+export default Home
