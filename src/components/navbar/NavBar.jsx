@@ -24,7 +24,7 @@ const NavBar = () => {
           <div className="dropdown-menu information-grid">
             <div className="dropdown-link">
               <NavLink
-                to="/formation"
+                to="/formations"
                 className="item-link"
                 element={<Training />}
               >

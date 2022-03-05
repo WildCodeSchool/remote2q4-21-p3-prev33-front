@@ -1,0 +1,35 @@
+.item-cards {
+  width: 300px;
+  max-height: 25px;
+  background-color: #1e4a6d;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.6s ease-out;
+}
+
+.item-cards:hover {
+  max-height: 220px;
+  transition: 0.6s ease-in;
+}
+
+.item-h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.item-span {
+  display: block;
+  margin: 6.5px;
+  font-size: 15px;
+}
+.item-a {
+  text-decoration: none;
+  color: white;
+}
+
+.item-desc span {
+  font-size: 1.2em;
+}
