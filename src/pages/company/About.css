@@ -5,8 +5,7 @@
   height: 10px;
 }
 .about-cv {
-  margin-top: 5px;
-  position: block;
+  display: block;
   text-align: center;
   text-decoration: none;
 }
@@ -21,7 +20,7 @@
   border: 1px solid transparent;
 }
 .about-svg:hover {
-  transform: scale(0.9);
+  transform: scale(0.8);
   border: 1px solid black;
   border-radius: 5px;
   padding: 3px;
@@ -66,7 +65,9 @@
 
 @media screen and (max-width: 767px) {
   .about-cv {
-    font-size: 14px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
   }
 
   .about-svg {
@@ -93,6 +94,11 @@
   }
 
   .about-img {
-    width: 150px;
+    width: 90px;
+  }
+
+  .about-top {
+    top: -40px;
+    left: 30%;
   }
 }

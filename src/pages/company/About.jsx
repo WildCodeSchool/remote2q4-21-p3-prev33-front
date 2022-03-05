@@ -13,9 +13,10 @@ export default function About() {
             Alexandre ALONSO crée Prév 33 en septembre 2020. Fort de 30 ans
             d’activités dans le domaine de l’urgence, la formation et la
             sécurité, j’ai décidé de créer mon entreprise afin de mettre mon
-            expérience au service des PME/TPE.
-            <div className="about-cv">
-              Veuillez trouver mon
+            expérience au service des PME/TPE.<br></br>
+            <br></br>
+            <span className="about-cv">
+              <i>Veuillez trouver mon :</i>
               <a
                 href="http://www.prev33.fr/src/CV/CV.pdf"
                 target="_blank"
@@ -34,7 +35,7 @@ export default function About() {
                   ></path>
                 </svg>
               </a>
-            </div>
+            </span>
           </p>
           <p className="about-p">
             Ma carrière militaire à la Brigade des Sapeurs-Pompiers de Paris m’a

@@ -33,3 +33,22 @@
 .item-desc span {
   font-size: 1.2em;
 }
+
+@media screen and (max-width: 767px) {
+  .item-cards {
+    width: 280px;
+    max-height: 25px;
+    background-color: #1e4a6d;
+    margin: -10px auto;
+    padding: 3px;
+  }
+
+  .item-h3 {
+    margin-bottom: 10px;
+  }
+
+  .item-span {
+    margin: 5px;
+    font-size: 15px;
+  }
+}
