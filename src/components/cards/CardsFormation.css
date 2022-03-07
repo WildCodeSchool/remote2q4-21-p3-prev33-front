@@ -1,0 +1,16 @@
+.formation {
+    display: flex;
+    justify-content: space-around;
+ }
+
+.advice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
