@@ -9,11 +9,12 @@ import Audits from "./pages/audits/Audits";
 import PageTest from "./pages/tests/PageTest";
 import About from "./pages/company/About";
 import SignUp from "./pages/signup/SignUp";
+import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +23,8 @@ function App() {
         <Route path="/tests" element={<PageTest />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
-      </Routes>
+      </Routes> */}
+      <Admin />
     </div>
   );
 }
