@@ -1,3 +1,22 @@
 .Home {
   width: 100%;
 }
+
+.home-background {
+  background-image: url("../../assets/voiturePrev33.png");
+  height: 250px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 center;
+}
+
+@media screen and (max-width: 767px) {
+  .home-background {
+    background-image: url("../../assets/voiturePrev33.png");
+
+    height: 150px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: -480px -150px;
+  }
+}

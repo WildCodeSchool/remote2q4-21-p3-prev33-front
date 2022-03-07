@@ -18,7 +18,7 @@ export default function About() {
             <span className="about-cv">
               <i>Veuillez trouver mon :</i>
               <a
-                href="http://www.prev33.fr/src/CV/CV.pdf"
+                href="http://prev33.fr/src/CV/CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
