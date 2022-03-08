@@ -1,6 +1,6 @@
 .item-cards {
   width: 300px;
-  max-height: 40px;
+  max-height: 25px;
   background-color: #1e4a6d;
   margin: auto;
   padding: 5px;
@@ -16,7 +16,7 @@
 
 .item-h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: white;
 }
 
