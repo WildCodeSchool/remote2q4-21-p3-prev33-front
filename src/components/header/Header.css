@@ -2,12 +2,11 @@
   width: 100%;
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #e19e20;
   color: #fff;
   line-height: 0px;
   font-family: "Courier New", Courier, monospace;
-  border-radius: 50px;
 }
 
 .Header-logo {
@@ -30,12 +29,14 @@
 
 .Logo {
   width: 50px;
+  margin-left: 20px;
 }
 
 .styled {
   border: 0;
   line-height: 2.5;
   padding: 0 10px;
+  margin-right: 20px;
   font-size: 1rem;
   text-align: center;
   color: #fff;
@@ -61,9 +62,6 @@
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.Bouton {
-  padding-left: 70px;
-}
 .header-link {
   text-decoration: none;
   color: #e19e20;

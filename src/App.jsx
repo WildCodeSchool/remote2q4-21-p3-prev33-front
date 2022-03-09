@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import NavBar from "./components/navbar/NavBar";
+import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Formations from "./pages/formations/Formations";
 import Audits from "./pages/audits/Audits";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 .PageTest {
-  margin: 50px auto 0;
-  height: 100vh;
+  margin: 30px auto 0;
   user-select: none;
 }
 
@@ -181,6 +180,10 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .PageTest {
+    margin: 60px auto 0;
+    user-select: none;
+  }
   .pagetest-h2 {
     font-size: 20px;
   }
@@ -192,7 +195,7 @@ button:hover {
 
   .test-card {
     width: 80%;
-    margin: auto;
+    margin: 0 auto 25px;
   }
   .pagetest-presentation {
     width: 80%;
@@ -204,7 +207,7 @@ button:hover {
   .pagetest-container {
     display: grid;
     grid-template-areas: "a";
-    grid-gap: 10px;
+    grid-gap: 1px;
     grid-auto-columns: auto;
     justify-content: center;
     align-items: center;

@@ -8,7 +8,7 @@ import About from "../../pages/company/About";
 import PageTest from "../../pages/tests/PageTest";
 
 const NavBar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const handleClick = () => setClick(!click);
 
   return (
