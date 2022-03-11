@@ -16,20 +16,22 @@ const CardsFormation = () => {
 
   return (
     <div className="CardsFormation">
-      <h2 className="title">Formation</h2>
+      <h2 className="cardsformation-title">Formations</h2>
       <div className="formation">
-        {categories.slice(0, 4).map((category) => (
+        {categories.slice(0, 4).map((category, index) => (
           <Cards
+            key={index}
             category={category.id}
             name={category.name}
             image={category.image}
           />
         ))}
       </div>
-      <h2 className="title">Audits et Conseils</h2>
+      <h2 className="cardsformation-title">Audits et Conseils</h2>
       <div className="advice">
-        {categories.slice(4, 8).map((category) => (
+        {categories.slice(4, 8).map((category, index) => (
           <Cards
+            key={index}
             category={category.id}
             name={category.name}
             image={category.image}
@@ -37,7 +39,9 @@ const CardsFormation = () => {
         ))}
       </div>
       <div className="Quiz">
-        <h2 className="title">Testez votre niveau de Securité</h2>
+        <h2 className="cardsformation-title">
+          Testez votre niveau de Securité
+        </h2>
         <CardsQuiz />
       </div>
     </div>

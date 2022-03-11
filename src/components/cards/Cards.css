@@ -26,7 +26,8 @@
   border-radius: 10px;
 }
 
-.card-home:hover {
+
+.card:hover {
   transition: transform 0.5s;
   transform: rotateY(20deg);
 }
@@ -50,6 +51,7 @@
   backface-visibility: hidden;
 }
 
+.side,
 .card_face {
   position: absolute;
   height: 100%;
@@ -62,6 +64,19 @@
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.card_face--front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.card_face--front span {
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  margin-left: 30%;
+  color: rgb(0, 0, 0);
 }
 
 .card_face--back {
@@ -86,4 +101,22 @@
 
 .link:hover {
   text-decoration: underline #e19e20;
+}
+
+@media screen and (max-width: 767px) {
+  .Cards {
+    width: 290px;
+    height: 390px;
+    margin: 5px;
+  }
+
+  .title-card {
+    width: 90%;
+  }
+
+  .card_face--front span {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+  }
 }

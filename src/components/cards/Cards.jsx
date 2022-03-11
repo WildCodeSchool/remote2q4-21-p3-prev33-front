@@ -31,8 +31,8 @@ const Cards = ({ category, name, image }) => {
 
         <div className="side card_face--back">
           <div className="link-card">
-            {trainings.map((training) => (
-              <Link to="/" className="link">
+            {trainings.map((training, index) => (
+              <Link to="/" key={index} className="link">
                 {training.title}
               </Link>
             ))}
