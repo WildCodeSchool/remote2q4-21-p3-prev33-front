@@ -7,25 +7,25 @@ const CardsQuiz = () => {
   return (
     <div className="CardsQuiz">
       <div className="quiz quiz-fier1">
-        <Link to="/test">
+        <Link to="/tests">
           <h2>Test incendie 1</h2>
           {/* <img src={logo} alt="logo" /> */}
         </Link>
       </div>
       <div className="quiz quiz-fire2">
-        <Link to="/test">
+        <Link to="/tests">
           <h2>test incendie 2</h2>
           {/* <img src={logo} alt="logo" /> */}
         </Link>
       </div>
       <div className="quiz quiz-security">
-        <Link to="/test">
+        <Link to="/tests">
           <h2>test securité</h2>
           {/* <img src={logo} alt="logo" /> */}
         </Link>
       </div>
       <div className="quiz quiz-RP">
-        <Link to="/test">
+        <Link to="/tests">
           <h2>test RP</h2>
           {/* <img src={logo} alt="logo" /> */}
         </Link>

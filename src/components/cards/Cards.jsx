@@ -5,12 +5,11 @@ import axios from "axios";
 
 const Cards = ({ category, name, image }) => {
   const [trainings, settrainings] = useState([]);
-  const [flipCard, setFlipCard] = useState(true)
+  const [flipCard, setFlipCard] = useState(true);
 
- function returnedTheCard () {
-       setFlipCard(!flipCard)
+  function returnedTheCard() {
+    setFlipCard(!flipCard);
   }
-
 
   useEffect(() => {
     axios
@@ -23,7 +22,7 @@ const Cards = ({ category, name, image }) => {
 
   return (
     <div className="Cards">
-      <div className={flipCard? 'card-home' : 'card-flip'}>
+      <div className={flipCard ? "card-home" : "card-flip"}>
         <div className="side card_face--front">
           <span className="title-card">{name}</span>
           <img onClick={returnedTheCard} src={image} alt={name} />
@@ -31,9 +30,8 @@ const Cards = ({ category, name, image }) => {
 
         <div className="side card_face--back">
           <div className="link-card">
-          {trainings.map((training) => (
-            
-              <Link to="/" className="link">
+            {trainings.map((training, index) => (
+              <Link to="/" className="link" key={index}>
                 {training.title}
               </Link>
             ))}

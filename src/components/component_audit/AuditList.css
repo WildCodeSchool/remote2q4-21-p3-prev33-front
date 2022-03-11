@@ -1,0 +1,22 @@
+.ItemList {
+  height: 20vh;
+  margin: 60px auto;
+}
+
+.ItemList-title {
+  text-align: center;
+}
+
+.ItemList-container {
+  display: grid;
+  grid-template-areas: "a a a a";
+  grid-gap: 30px;
+  grid-auto-columns: auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .ItemList-container {
+    grid-template-areas: "a";
+  }
+}
