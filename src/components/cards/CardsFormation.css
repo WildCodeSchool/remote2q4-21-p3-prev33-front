@@ -1,17 +1,22 @@
 .formation {
-    display: flex;
-    justify-content: space-around;
- }
+  display: flex;
+  justify-content: space-around;
+}
 
 .advice {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .title {
-    font-size: 5vh;
-    text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+  font-size: 5vh;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  color: #ffffff;
+  color: #333333;
+background: #FFFFFF;
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+color: #333333;
+background: #FFFFFF;
 }
-
