@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./SignUp.css";
 import emailjs from "@emailjs/browser";
+import Map from "../../components/map/Map";
 
 export default function SignUp() {
   const form = useRef();
@@ -212,6 +213,7 @@ export default function SignUp() {
           </form>
           <span>Tous les champs sont à remplir</span>
         </div>
+        <Map />
       </div>
     </>
   );

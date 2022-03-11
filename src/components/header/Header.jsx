@@ -13,19 +13,15 @@ function Header() {
         </Link>
       </div>
 
-      <div className="text1">
-        <p>"Protégeons, ensemble,</p>
-        <p>votre outil de travail"</p>
+      <div className="header-text1">
+        <p>"Protégeons, ensemble,&nbsp;</p>
+        <p> votre outil de travail"</p>
       </div>
-      <div className="text2">
-        <p>Incendie</p>
-        <br />
-        <p>Risques Professionnels</p>
-        <br />
-        <p>Sûreté</p>
+      <div className="header-text2">
+        <p>Incendie - Risques Professionnels - Sûreté</p>
       </div>
       <div className="Bouton">
-        <button class="favorite styled" type="button">
+        <button className="favorite styled" type="button">
           <NavLink to="/signup" className="header-link" element={<SignUp />}>
             Contactez-nous
           </NavLink>
