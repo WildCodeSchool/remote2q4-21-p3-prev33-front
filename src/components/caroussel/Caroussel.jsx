@@ -6,12 +6,12 @@ const Caroussel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     nextSlide();
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [current]);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
