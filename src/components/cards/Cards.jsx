@@ -18,20 +18,21 @@ const Cards = ({ category, name, image }) => {
       .then((data) => settrainings(data));
   }, []);
 
-  console.log(flipCard);
-
   return (
     <div className="Cards">
-      <div className={flipCard ? "card-home" : "card-flip"}>
+      <span className="title-card">{name}</span>
+      <div
+        onClick={returnedTheCard}
+        className={flipCard ? "card-home" : "card-flip"}
+      >
         <div className="side card_face--front">
-          <span className="title-card">{name}</span>
-          <img onClick={returnedTheCard} src={image} alt={name} />
+          <img src={image} alt={name} />
         </div>
 
         <div className="side card_face--back">
           <div className="link-card">
             {trainings.map((training, index) => (
-              <Link to="/" className="link" key={index}>
+              <Link to="/" key={index} className="link">
                 {training.title}
               </Link>
             ))}

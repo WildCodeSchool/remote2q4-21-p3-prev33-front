@@ -1,41 +1,14 @@
 .CardsQuiz {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-around;
 }
 
 .quiz {
-  width: 200px;
+  width: 300px;
   height: 300px;
-  background-color: #1e4a6d;
-  border-radius: 10px;
 }
-.quiz h3 {
-  color: white;
-}
+
 .quiz img {
-  width: 200px;
+  width: 100%;
   height: auto;
-  margin-top: 2vh;
-}
-
-@media screen and (max-width: 767px) {
-  .CardsQuiz {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-  }
-
-  .quiz {
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    border: solid;
-  }
-
-  .quiz img {
-    width: 200px;
-    height: auto;
-    margin-top: 2vh;
-  }
 }
