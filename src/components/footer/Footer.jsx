@@ -2,8 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import Map from "../map/Map";
+import UseModal from "../mentionsLegales/UseModal";
+import ModalMentions from "../mentionsLegales/ModalMentions";
 
-function Footer({ visible, setVisible }) {
+function Footer() {
+  const { show, toggle } = UseModal();
+
   const today = new Date();
   return (
     <>
@@ -25,12 +29,12 @@ function Footer({ visible, setVisible }) {
             </li>
             <li className="footer-list">
               <a
-                href="https://www.linkedin.com/in/prev33"
+                href="https://www.instagram.com/prev33_prevention/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <i className="fab fa-linkedin"></i>
+                  <i className="fab fa-instagram-square"></i>
                 </span>
               </a>
             </li>
@@ -42,11 +46,11 @@ function Footer({ visible, setVisible }) {
               </NavLink>
             </li>
             <li className="footer-list">
-              <NavLink to="/signup">
+              <a href="mailto:prev33.contact@gmail.com">
                 <span className="icon">
                   <i className="fas fa-envelope"></i>
                 </span>
-              </NavLink>
+              </a>
             </li>
             <li className="footer-list">
               <NavLink to="/">
@@ -77,6 +81,13 @@ function Footer({ visible, setVisible }) {
               </svg>
             </a>
           </ul>
+        </div>
+        <div className="footer-mentionsLegales">
+          <button onClick={toggle}>
+            <span>&darr;</span> Mentions légales <span>&darr;</span>
+          </button>
+
+          <ModalMentions show={show} hide={toggle} />
         </div>
       </div>
     </>

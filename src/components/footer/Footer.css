@@ -19,15 +19,13 @@
 }
 
 .footer-navigation ul li {
-  /* position: relative; */
   list-style: none;
   width: 60px;
-  height: 50px;
+  height: 60px;
   margin: 0 auto;
 }
 
 .footer-navigation ul li a {
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,7 +37,7 @@
 .footer-navigation ul li a .icon {
   position: relative;
   left: 50%;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: center;
   transition: 0.3s;
   color: #1e4a6d;
@@ -52,7 +50,7 @@
 .footer-school {
   position: absolute;
   font-size: 0.9em;
-  top: 60%;
+  top: 65%;
   text-align: center;
   color: #1e4a6d;
 }
@@ -60,6 +58,32 @@
 .footer-school > a {
   text-decoration: none;
   color: #1e4a6d;
+}
+
+.footer-mentionsLegales {
+  position: absolute;
+  width: 95%;
+  height: auto;
+}
+.footer-mentionsLegales > button {
+  position: absolute;
+  font-size: 0.8em;
+  top: -25px;
+  left: 49.5%;
+  color: #1e4a6d;
+  background-color: #e19e20;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-mentionsLegales > button {
+  transform: translateY(0);
+  transition: all 0.5s ease-in;
+}
+
+.footer-mentionsLegales > button:hover {
+  transform: translateY(5px);
+  transition: all 0.5s ease-in;
 }
 
 .footer-copyright {
@@ -90,28 +114,70 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    margin-top: 20px;
+  }
+
   .footer-navigation {
-    height: 100px;
+    height: 150px;
+  }
+
+  .footer-navigation ul li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .footer-navigation ul li a {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-navigation ul li a .icon {
+    left: 25%;
+    font-size: 1.4em;
   }
 
   .footer-school {
     font-size: 0.8em;
-    top: 60%;
+    top: 55%;
   }
 
   .footer-copyright {
     font-size: 0.7rem;
     font-weight: 600;
-    top: 80%;
+    top: 70%;
   }
 
   .footer-top {
-    position: relative;
-    left: 0;
+    position: absolute;
+    left: 0%;
+    top: 50%;
   }
 
   .footer-top > svg {
     width: 1.4rem;
     padding: 1px;
+  }
+
+  .footer-mentionsLegales {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+  .footer-mentionsLegales > button {
+    position: absolute;
+    font-size: 0.8em;
+    top: -25px;
+    left: 34%;
+    color: #1e4a6d;
+    background-color: #e19e20;
+    border: none;
+    cursor: pointer;
   }
 }

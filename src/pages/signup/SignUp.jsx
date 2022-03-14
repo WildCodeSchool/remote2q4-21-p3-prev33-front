@@ -210,7 +210,23 @@ export default function SignUp() {
               Envoyer
             </button>
           </form>
-          <span>Tous les champs sont à remplir</span>
+          <span
+            style={{
+              fontSize: "11px",
+            }}
+          >
+            Tous les champs sont à remplir.
+          </span>
+          <br></br>
+          <span
+            style={{
+              fontSize: "10px",
+              backgroundColor: "#a2d9ce",
+            }}
+          >
+            En soumettant ce formulaire, j'accepte que les données saisies
+            soient collectées dans le but de traiter ma demande.
+          </span>
         </div>
       </div>
     </>

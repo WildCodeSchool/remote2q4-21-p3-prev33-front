@@ -13,7 +13,7 @@
 @media screen and (max-width: 767px) {
   .home-background {
     background-image: url("../../assets/voiturePrev33.png");
-
+    margin-top: 50px;
     height: 150px;
     background-attachment: fixed;
     background-size: cover;

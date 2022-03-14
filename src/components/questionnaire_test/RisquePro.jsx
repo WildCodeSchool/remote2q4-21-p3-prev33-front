@@ -28,7 +28,9 @@ const RisquePro = () => {
     <div className="test-card">
       {showScore ? (
         <div className="score-section">
-          Votre résultat est de {score} sur {risquePro.length}
+          <p>
+            Votre résultat est de {score} sur {risquePro.length}
+          </p>
           <div className="score-resultat">
             <p>
               - 10 points: La prevention des risques professionnels est

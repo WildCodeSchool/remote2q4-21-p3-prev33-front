@@ -1,14 +1,12 @@
-.CardsQuiz {
-  display: flex;
-  justify-content: space-around;
-}
-
 .quiz {
+  margin: -40px auto 0;
   width: 300px;
   height: 300px;
+  left: 50%;
 }
 
 .quiz img {
   width: 100%;
   height: auto;
+  padding-bottom: 5px;
 }

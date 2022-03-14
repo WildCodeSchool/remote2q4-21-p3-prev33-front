@@ -31,6 +31,17 @@
   width: 50px;
   margin-left: 20px;
 }
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.header-phone > a,
+.header-mail > a {
+  color: #1e4a6d;
+  padding-bottom: 5px;
+}
 
 .styled {
   border: 0;
@@ -107,13 +118,21 @@
   .header-link {
     font-size: 12px;
   }
-  .styled {
-    position: absolute;
-    width: 50%;
-    left: 50%;
-    transform: translate(-50%);
+
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: 0.7em;
+    margin-top: 10px;
   }
-  .Bouton {
+  .header-phone > a,
+  .header-mail > a {
+    color: #1e4a6d;
+    padding-bottom: 5px;
+  }
+  button.favorite.styled {
     margin: 5px auto;
   }
 }

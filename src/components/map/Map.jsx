@@ -8,8 +8,8 @@ mapboxgl.accessToken =
 
 export default function Map() {
   const mapContainer = useRef(null);
-  const [lng, setLng] = useState(-0.5719083547592163);
-  const [lat, setLat] = useState(44.84733581542969);
+  const [lng, setLng] = useState(-0.6963224);
+  const [lat, setLat] = useState(44.8867549);
   const [zoom, setZoom] = useState(18);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Map() {
       .setLngLat([lng, lat])
       .setPopup(
         new mapboxgl.Popup().setHTML(
-          "<style> h2,h3 {text-align:center}</style><h2>Prev33</h2><h3>7 allées de Chartres</h3><h3>tel: 06 95 23 18 73</h3>"
+          "<style> h2,h3 {text-align:center}</style><h2>Prev33</h2><h3>24 Av. René Descartes</br> 33160 Saint-Médard-en-Jalles</h3><h3>tel: 06 95 23 18 73</h3>"
         )
       )
       .addTo(map);
