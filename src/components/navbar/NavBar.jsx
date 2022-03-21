@@ -88,10 +88,10 @@ const NavBar = () => {
           </div>
         </div>
         <NavLink to="/tests" className="navigation-link" element={<PageTest />}>
-          Tests
+          votre niveau de sécurité
         </NavLink>
         <NavLink to="/about" className="navigation-link" element={<About />}>
-          A propos
+          mon entreprise
         </NavLink>
       </div>
       <div className="navbar-menu-icon" onClick={handleClick}>

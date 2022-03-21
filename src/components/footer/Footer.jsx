@@ -39,7 +39,7 @@ function Footer() {
               </a>
             </li>
             <li className="footer-list">
-              <NavLink to="/about">
+              <NavLink to="/connexion">
                 <span className="icon">
                   <i className="fas fa-user"></i>
                 </span>

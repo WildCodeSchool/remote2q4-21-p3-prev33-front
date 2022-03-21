@@ -1,7 +1,13 @@
+.CardsQuiz {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
 .quiz {
   margin: -40px auto 0;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   left: 50%;
 }
 
@@ -9,4 +15,26 @@
   width: 100%;
   height: auto;
   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .CardsQuiz {
+    width: 300px;
+    height: 300px;
+  }
+
+  .quiz {
+    margin: 50px auto 0;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+  }
+
+  .quiz img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    bottom: 70px;
+  }
 }

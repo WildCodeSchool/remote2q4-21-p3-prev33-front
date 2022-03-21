@@ -1,6 +1,6 @@
 import React from "react";
 import "./CardsQuiz.css";
-import CardTest from "../../assets/CardTest.png";
+import CardTest from "../../assets/CardTest_Logo.png";
 import { Link } from "react-router-dom";
 
 const CardsQuiz = () => {
