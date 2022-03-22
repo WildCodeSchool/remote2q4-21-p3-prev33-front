@@ -1,0 +1,38 @@
+.adminPanel {
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+}
+.adminPanel > h1 {
+  text-align: center;
+}
+
+.adminCarrouselForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.admin-carrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  background-color: #875300;
+  color: #fff;
+}
+.admin-label {
+  color: #fff;
+  text-transform: uppercase;
+}
+.admin-input {
+  width: 40%;
+  padding: 5px;
+}
+
+.admin-button {
+  width: 20%;
+  padding: 5px;
+}
