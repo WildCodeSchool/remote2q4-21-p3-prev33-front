@@ -28,7 +28,9 @@ const IncendieErp = () => {
     <div className="test-card">
       {showScore ? (
         <div className="score-section">
-          Votre résultat est de {score} sur {incendieErp.length}
+          <p>
+            Votre résultat est de {score} sur {incendieErp.length}
+          </p>
           <div className="score-resultat">
             <p>
               - 10 points: La sécurité incendie est organisée, vous connaissez

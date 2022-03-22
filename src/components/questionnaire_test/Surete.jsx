@@ -28,7 +28,9 @@ const Surete = () => {
     <div className="test-card">
       {showScore ? (
         <div className="score-section">
-          Votre résultat est de {score} sur {surete.length}
+          <p>
+            Votre résultat est de {score} sur {surete.length}
+          </p>
           <div className="score-resultat">
             <p>
               - 10 points: La sûreté est organisée, les vulnérabilités sont

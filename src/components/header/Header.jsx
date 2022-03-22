@@ -20,10 +20,24 @@ function Header() {
       <div className="header-text2">
         <p>Incendie - Risques Professionnels - Sûreté</p>
       </div>
-      <div className="Bouton">
+      <div className="header-info">
+        <div className="header-phone">
+          <a href="tel:+33695231873">
+            <span className="icon">
+              <i className="fas fa-phone"> 06 95 23 18 73 </i>
+            </span>
+          </a>
+        </div>
+        <div className="header-mail">
+          <a href="mailto:prev33.contact@gmail.com">
+            <span className="icon">
+              <i className="fas fa-envelope"> prev33.contact@gmail.com</i>
+            </span>
+          </a>
+        </div>
         <button className="favorite styled" type="button">
           <NavLink to="/signup" className="header-link" element={<SignUp />}>
-            Contactez-nous
+            Demander un devis
           </NavLink>
         </button>
       </div>

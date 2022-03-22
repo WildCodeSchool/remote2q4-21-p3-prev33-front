@@ -1,18 +1,22 @@
 .CardsFormation {
   width: 100%;
+  text-transform: uppercase;
+  text-align: center;
 }
 .formation {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
 }
 
 .advice {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
 }
 
 .title {
-  font-size: 5vh;
+  font-size: 4vh;
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 5vh;
@@ -24,10 +28,8 @@
   background: #ffffff;
 }
 .cardsformation-title {
-  font-size: 28px;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {

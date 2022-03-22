@@ -1,5 +1,5 @@
 .item-cards {
-  width: 300px;
+  width: 400px;
   max-height: 25px;
   background-color: #1e4a6d;
   margin: auto;
@@ -12,12 +12,6 @@
 .item-cards:hover {
   max-height: 220px;
   transition: 0.6s ease-in;
-}
-
-.item-h3 {
-  text-align: center;
-  margin-bottom: 15px;
-  color: white;
 }
 
 .item-span {

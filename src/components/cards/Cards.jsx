@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Cards = ({ category, name, image }) => {
-  const [trainings, settrainings] = useState([]);
+  const [trainings, setTrainings] = useState([]);
   const [flipCard, setFlipCard] = useState(true);
 
   function returnedTheCard() {
@@ -15,7 +15,7 @@ const Cards = ({ category, name, image }) => {
     axios
       .get(`http://localhost:8000/api/training_category/${category}/trainings`)
       .then((res) => res.data)
-      .then((data) => settrainings(data));
+      .then((data) => setTrainings(data));
   }, []);
 
   return (

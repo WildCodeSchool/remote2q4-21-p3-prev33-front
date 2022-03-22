@@ -8,7 +8,7 @@ import About from "../../pages/company/About";
 import PageTest from "../../pages/tests/PageTest";
 
 const NavBar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const handleClick = () => setClick(!click);
 
   return (
@@ -88,10 +88,10 @@ const NavBar = () => {
           </div>
         </div>
         <NavLink to="/tests" className="navigation-link" element={<PageTest />}>
-          Tests
+          votre niveau de sécurité
         </NavLink>
         <NavLink to="/about" className="navigation-link" element={<About />}>
-          A propos
+          mon entreprise
         </NavLink>
       </div>
       <div className="navbar-menu-icon" onClick={handleClick}>
