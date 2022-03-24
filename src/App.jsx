@@ -17,6 +17,7 @@ import AdminPanel from "./components/admin/admin-panel/AdminPanel";
 import AdminRoutes from "./components/admin/admin-routes/AdminRoutes";
 import UserProvider from "./contexts/UserProvider";
 import Connexion from "./pages/connexion/Connexion";
+import Formation from "./components/files/Pdf";
 import Training from "./pages/training/Training";
 import AuditDetail from "./pages/audits/AuditDetail"
 
