@@ -3,8 +3,6 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./Caroussel.css";
 
 const Caroussel = ({ slides }) => {
-  console.log(slides.title);
-  console.log(slides.image);
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
