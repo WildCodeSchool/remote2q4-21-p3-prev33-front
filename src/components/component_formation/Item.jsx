@@ -17,9 +17,14 @@ const Item = ({ menu, name }) => {
     <div>
       <div className="item-cards">
         <h3 className="item-h3">{name}</h3>
-        {trainings.map((id, index) => (
-          <Link className="item-a" to="/" rel="noopener noreferrer" key={index}>
-            <span className="item-span">{id.title}</span>
+        {trainings.map((training, index) => (
+          <Link
+            to={{ pathname: `/formation/${training.title}` }}
+            className="item-a"
+            rel="noopener noreferrer"
+            key={index}
+          >
+            <span className="item-span">{training.title}</span>
           </Link>
         ))}
       </div>
