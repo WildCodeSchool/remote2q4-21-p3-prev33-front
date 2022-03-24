@@ -16,13 +16,13 @@ const Item = ({ menu }) => {
   return (
     <div>
       <div className="item-cards">
-        <h3 className="item-h3">{menu.name}</h3>
-        {trainings.map((training) => (
+        <h3 className="item-h3">{name}</h3>
+        {trainings.map((training, index) => (
           <Link
+            to={{ pathname: `/formation/${training.title}` }}
             className="item-a"
-            to={`/formations/${training.title}`}
             rel="noopener noreferrer"
-            key={training.id}
+            key={index}
           >
             <span className="item-span">{training.title}</span>
           </Link>
