@@ -20,9 +20,9 @@ const Connexion = () => {
         )}
         {user && (
           <>
-            {/* <Link className="connexion-link" to="/admin">
+            <Link className="connexion-link" to="/admin">
               Admin
-            </Link> */}
+            </Link>
             <Link className="connexion-link" to="/disconnect">
               Deconnexion
             </Link>
