@@ -6,6 +6,7 @@ import Training from "../../pages/training/Training";
 import Audits from "../../pages/audits/Audits";
 import About from "../../pages/company/About";
 import PageTest from "../../pages/tests/PageTest";
+import AuditList from "../component_audit/AuditList";
 
 const NavBar = () => {
   const [click, setClick] = useState(true);
@@ -17,11 +18,18 @@ const NavBar = () => {
         <NavLink to="/" className="navigation-link" element={<Home />}>
           Accueil
         </NavLink>
-        <div className="dropdown" data-dropdown>
-          <button className="navigation-button" data-dropdown-button>
+        <NavLink
+          to="/formations"
+          className="navigation-link"
+          element={<Training />}
+        >
+          Formations
+        </NavLink>
+        {/* <div className="dropdown" data-dropdown> */}
+        {/* <button className="navigation-button" data-dropdown-button>
             Formations
-          </button>
-          <div className="dropdown-menu information-grid">
+          </button> */}
+        {/* <div className="dropdown-menu information-grid">
             <div className="dropdown-link">
               <NavLink
                 to="/formations"
@@ -58,13 +66,16 @@ const NavBar = () => {
                 Formations spécifiques
               </NavLink>
             </div>
-          </div>
-        </div>
-        <div className="dropdown" data-dropdown>
-          <button className="navigation-button" data-dropdown-button>
+          </div> */}
+        {/* </div> */}
+        {/* <div className="dropdown" data-dropdown> */}
+        <NavLink to="/audits" className="navigation-link" element={<Audits />}>
+          Audits et conseils
+        </NavLink>
+        {/* <button className="navigation-button" data-dropdown-button>
             Audits et conseils
-          </button>
-          <div className="dropdown-menu information-grid">
+          </button> */}
+        {/* <div className="dropdown-menu information-grid">
             <div className="dropdown-link">
               <NavLink to="/audits" className="item-link" element={<Audits />}>
                 Prévention incendie
@@ -85,8 +96,8 @@ const NavBar = () => {
                 Conseils
               </NavLink>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
         <NavLink to="/tests" className="navigation-link" element={<PageTest />}>
           votre niveau de sécurité
         </NavLink>

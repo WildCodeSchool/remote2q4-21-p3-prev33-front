@@ -27,7 +27,7 @@ const CardsFormation = () => {
           />
         ))}
       </div>
-      <h2 className="cardsformation-title">Audits et Conseils</h2>
+      <h2 className="cardsformation-title-audit">Audits et Conseils</h2>
       <div className="advice">
         {categories.slice(4, 8).map((category, index) => (
           <Cards
@@ -39,7 +39,7 @@ const CardsFormation = () => {
         ))}
       </div>
       <div className="Quiz">
-        <h2 className="cardsformation-title">
+        <h2 className="cardsformation-title-quiz">
           Testez votre niveau de Securité
         </h2>
         <CardsQuiz />

@@ -1,6 +1,6 @@
 .connexion-nav {
   width: 100%;
-  height: 51vh;
+  height: 42vh;
 }
 
 .connexion {
@@ -10,11 +10,10 @@
   justify-content: center;
   width: 400px;
   background-image: url("../../assets/bangsai.jpg");
-  /* background-color: #1e4a6d; */
   height: 370px;
   background-size: cover;
   background-position: 0 -25px;
-  margin: 40px auto 0;
+  margin: 100px auto 0;
   border-radius: 10px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
 }
@@ -33,7 +32,7 @@
 }
 .login {
   width: 100%;
-  height: 55vh;
+  height: 42vh;
 }
 .loginForm {
   width: 70%;
@@ -45,9 +44,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 408px;
-  margin: 0 auto 50px;
+  width: 400px;
+  height: 370px;
+  margin: 100px auto 50px;
   text-align: center;
   border-radius: 5px;
   background: radial-gradient(circle, white, transparent 50%),

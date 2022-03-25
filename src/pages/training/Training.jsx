@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import DetailTraining from "./DetailTraining";
+// import DetailTraining from "./DetailTraining";
 import DocPdf from "../../components/pdf/DocPdf";
 import { useParams } from "react-router-dom";
 import ItemList from "../../components/component_formation/ItemList";

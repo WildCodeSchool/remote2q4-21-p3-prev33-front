@@ -4,7 +4,7 @@ import ItemList from "../../components/component_formation/ItemList";
 
 const Formations = () => {
   return (
-    <div>
+    <div className="Formations">
       <ItemList />
     </div>
   );
