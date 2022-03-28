@@ -6,7 +6,7 @@ const Connexion = () => {
   const { user } = useUser();
 
   return (
-    <nav>
+    <nav className="connexion-nav">
       <div className="connexion">
         {!user && (
           <>

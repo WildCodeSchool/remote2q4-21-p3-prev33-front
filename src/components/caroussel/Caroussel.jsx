@@ -9,7 +9,7 @@ const Caroussel = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [current]);
 
@@ -36,7 +36,11 @@ const Caroussel = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt="travel image" className="image" />
+              <img
+                src={`${process.env.REACT_APP_API_IMG}/${slide.image}`}
+                alt={slide.title}
+                className="image"
+              />
             )}
           </div>
         );

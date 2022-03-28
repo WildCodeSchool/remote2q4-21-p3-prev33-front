@@ -28,11 +28,23 @@
   background: #ffffff;
 }
 .cardsformation-title {
-  margin: 15vh;
+  margin-top: 50px;
+  margin-bottom: 40px;
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
   font-size: 40px;
 }
-
+.cardsformation-title-audit {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 40px;
+}
+.cardsformation-title-quiz {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 40px;
+}
 @media screen and (max-width: 767px) {
   .formation {
     display: flex;
@@ -46,10 +58,26 @@
     align-items: center;
   }
 
-  .cardsformation-title {
+  .cardsformation-title,
+  .cardsformation-title-audit,
+  .cardsformation-title-quiz {
     font-size: 28px;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+
+  .cardsformation-title-audit {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+
+  .cardsformation-title-quiz {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
   }
 }

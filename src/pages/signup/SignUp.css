@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 767px) {
   .signup-p {
-    margin-top: 40px;
+    margin-top: 10px;
   }
   .signup-span {
     margin: 5px auto;
@@ -99,11 +99,16 @@
     padding: 0;
   }
 
+  .signup-register-form {
+    padding: 15px;
+    height: 85vh;
+  }
+
   .signup-button {
     width: 80px;
     height: 25px;
     font-size: 18px;
-    margin: 5px auto 0;
+    margin: 5px auto 15px;
     background: #1e4a6d;
     color: white;
     border-radius: 5px;

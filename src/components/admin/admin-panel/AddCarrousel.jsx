@@ -15,7 +15,7 @@ const AddCarrousel = () => {
     formData.append("image", image);
 
     await axios.post(`${process.env.REACT_APP_API_URL}/carrousel`, formData);
-    navigator("/readCarrousel");
+    navigator("/admin");
   };
 
   return (
@@ -23,22 +23,22 @@ const AddCarrousel = () => {
       <section className="admin-carrousel">
         <h2 className="admin-h2">Section Carrousel</h2>
         <label className="admin-label" htmlFor="title">
-          Titre
+          Choix du nom de l'image
         </label>
         <input
           className="admin-input"
           type="text"
           id="title"
-          onChange={(event) => setTitle(event.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <label className="admin-label" htmlFor="image">
-          Image
+          Lien de l'image
         </label>
         <input
           className="admin-input"
           type="file"
           id="image"
-          onChange={(event) => setImage(event.target.files[0])}
+          onChange={(e) => setImage(e.target.files[0])}
         />
         <button className="admin-button" type="submit" onClick={handleSubmit}>
           Envoyer

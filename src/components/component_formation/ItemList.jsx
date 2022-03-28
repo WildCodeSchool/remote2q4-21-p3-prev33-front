@@ -17,8 +17,8 @@ const ItemList = () => {
   return (
     <div className="ItemList">
       <div className="ItemList-container">
-        {categories.slice(0, 4).map((menu, index) => (
-          <Item key={index} menu={menu.id} name={menu.name} />
+        {categories.slice(0, 4).map((menu) => (
+          <Item key={menu.id} menu={menu} />
         ))}
       </div>
     </div>
