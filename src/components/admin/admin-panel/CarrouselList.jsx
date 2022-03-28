@@ -7,7 +7,7 @@ const CarrouselList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/carrousel")
+      .get(`${process.env.REACT_APP_API_URL}/carrousel`)
       .then((res) => res.data)
       .then((data) => setItems(data));
   }, []);

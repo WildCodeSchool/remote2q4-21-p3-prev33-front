@@ -1,7 +1,8 @@
 import "./AdminPanel.css";
 import AddCarrousel from "./AddCarrousel";
 import CarrouselList from "./CarrouselList";
-import AddFiles from "../../files/AddFiles";
+import AddFiles from "./AddFiles";
+import FilesList from "./FilesList";
 
 const AdminPanel = () => (
   <div className="adminPanel">
@@ -9,6 +10,7 @@ const AdminPanel = () => (
     <AddCarrousel />
     <CarrouselList />
     <AddFiles />
+    <FilesList />
   </div>
 );
 
