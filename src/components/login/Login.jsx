@@ -53,42 +53,44 @@ const Login = () => {
   });
 
   return (
-    <div className="login-form">
-      <h1>Connexion</h1>
-      <p className="error">{error}</p>
-      <form className="loginForm" onSubmit={formik.handleSubmit}>
-        <label className="login-label" htmlFor="email">
-          Email
-          {formik.errors.email ? (
-            <div className="error">{formik.errors.email}</div>
-          ) : null}
-          <input
-            className="login-input"
-            id="email"
-            name="email"
-            type="email"
-            onChange={formik.handleChange}
-            value={formik.values.email}
-          />
-        </label>
-        <label className="login-label" htmlFor="password">
-          Mot de passe
-          {formik.errors.password ? (
-            <div className="error">{formik.errors.password}</div>
-          ) : null}
-          <input
-            className="login-input"
-            id="password"
-            name="password"
-            type="password"
-            onChange={formik.handleChange}
-            value={formik.values.password}
-          />
-        </label>
-        <button className="login-button" type="submit">
-          Entrer
-        </button>
-      </form>
+    <div div className="login">
+      <div className="login-form">
+        <h1>Connexion</h1>
+        <p className="error">{error}</p>
+        <form className="loginForm" onSubmit={formik.handleSubmit}>
+          <label className="login-label" htmlFor="email">
+            Email
+            {formik.errors.email ? (
+              <div className="error">{formik.errors.email}</div>
+            ) : null}
+            <input
+              className="login-input"
+              id="email"
+              name="email"
+              type="email"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+            />
+          </label>
+          <label className="login-label" htmlFor="password">
+            Mot de passe
+            {formik.errors.password ? (
+              <div className="error">{formik.errors.password}</div>
+            ) : null}
+            <input
+              className="login-input"
+              id="password"
+              name="password"
+              type="password"
+              onChange={formik.handleChange}
+              value={formik.values.password}
+            />
+          </label>
+          <button className="login-button" type="submit">
+            Entrer
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

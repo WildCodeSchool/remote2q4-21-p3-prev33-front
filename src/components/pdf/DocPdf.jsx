@@ -14,8 +14,6 @@ const DocPdf = ({ formation }) => {
 
   const url = "http://localhost:8000";
 
-
-
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
@@ -38,7 +36,9 @@ const DocPdf = ({ formation }) => {
 
       <div className="buttonDownload">
         <button>
-          <a target="_blank" href={file}>Telechargé le PDF</a>
+          <a target="_blank" href={file}>
+            Télécharger le PDF
+          </a>
         </button>
       </div>
     </div>
