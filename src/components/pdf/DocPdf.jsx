@@ -7,8 +7,6 @@ const DocPdf = ({ formation }) => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  const url = "http://localhost:8000/";
-
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
     setPageNumber(1);
@@ -33,7 +31,7 @@ const DocPdf = ({ formation }) => {
       </div>
       <Document
         className="FormationPdf"
-        file={url + formation.link}
+        file={`${process.env.REACT_APP_API_FILE}/${formation.link}`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} width={1200} />
@@ -56,7 +54,10 @@ const DocPdf = ({ formation }) => {
 
       <div className="buttonDownload">
         <button>
-          <a href={url + formation.link} target="_blank">
+          <a
+            href={`${process.env.REACT_APP_API_FILE}/${formation.link}`}
+            target="_blank"
+          >
             Télécharger le PDF
           </a>
         </button>

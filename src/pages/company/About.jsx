@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { CV } from "../../assets/pdf/CV_alexandre_alonso.pdf";
 import logo from "../../assets/logo.png";
 import "./About.css";
 
@@ -16,11 +17,7 @@ export default function About() {
             <br></br>
             <span className="about-cv">
               <i>Veuillez trouver mon :</i>
-              <a
-                href="http://prev33.fr/src/CV/CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={CV} target="_blank" rel="noopener noreferrer">
                 <svg
                   className="about-svg"
                   width="
