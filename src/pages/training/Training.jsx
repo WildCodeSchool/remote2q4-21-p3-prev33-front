@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import DetailTraining from "./DetailTraining";
 import DocPdf from "../../components/pdf/DocPdf";
 import { useParams } from "react-router-dom";
 import ItemList from "../../components/component_formation/ItemList";
@@ -15,13 +14,12 @@ const Training = () => {
       .then((res) => res.data)
       .then((data) => setFormation(data));
   }, [params.title]);
-
+  console.log("Training :" + formation);
   return (
     <div>
       <ItemList />
       <div>
         <DocPdf formation={formation} />
-        {/* <DetailTraining formation={formation} /> */}
       </div>
     </div>
   );
