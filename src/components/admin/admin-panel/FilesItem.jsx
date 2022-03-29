@@ -7,7 +7,7 @@ const FilesItem = ({ file }) => {
 
   const handleDelete = (id) => {
     axios.delete(`${process.env.REACT_APP_API_URL}/training/${file.id}`);
-    navigator("/");
+    navigator("/admin");
   };
 
   return (
