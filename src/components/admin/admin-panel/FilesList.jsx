@@ -4,7 +4,7 @@ import FilesItem from "./FilesItem";
 
 const FilesList = () => {
   const [files, setFiles] = useState([]);
-  const [categoryTraining, setCategoryTraining] = useState("1");
+  const [categoryTraining, setCategoryTraining] = useState("");
   const categories = [
     {
       id: 1,

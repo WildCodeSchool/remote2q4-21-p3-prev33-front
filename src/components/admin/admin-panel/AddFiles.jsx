@@ -37,14 +37,6 @@ const AddFiles = () => {
     formData.append("training_category_id", categoryTraining);
 
     await axios.post(`${process.env.REACT_APP_API_URL}/training`, formData);
-    console.log(...formData);
-    // navigator("/readCarrousel");
-    //   .then((response) => {
-    //     if (response.status === 201) {
-    //       setCategoryTraining(1);
-    //     }
-    //   })
-    //   .catch((err) => {});
   };
 
   return (

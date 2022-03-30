@@ -1,12 +1,14 @@
 .titleAndRef {
-  font-size: 30px;
+  font-size: 25px;
   color: #333333;
   background: #ffffff;
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  text-transform: capitalize;
 }
 
 .DocPdf {
   text-align: center;
+  height: auto;
 }
 
 .FormationPdf {
@@ -28,5 +30,3 @@
   text-decoration: none;
   color: black;
 }
-
-
