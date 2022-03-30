@@ -50,6 +50,7 @@ const AddFiles = () => {
           className="admin-input"
           type="text"
           id="title"
+          placeholder="Entrer un titre de fichier"
           onChange={(event) => setTitle(event.target.value)}
         />
         <label className="admin-label" htmlFor="reference">
@@ -59,6 +60,7 @@ const AddFiles = () => {
           className="admin-input"
           type="text"
           id="reference"
+          placeholder="Entrer une référence de format INC F1"
           onChange={(event) => setReference(event.target.value)}
         />
 
@@ -86,9 +88,9 @@ const AddFiles = () => {
           className="admin-input"
           type="file"
           id="link"
+          accept="application/pdf"
           onChange={(event) => setLink(event.target.files[0])}
         />
-
         <button className="admin-button" type="submit" onClick={handleSubmit}>
           Envoyer
         </button>

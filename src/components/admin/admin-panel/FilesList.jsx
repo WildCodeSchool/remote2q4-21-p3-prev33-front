@@ -40,12 +40,16 @@ const FilesList = () => {
     },
   ];
 
+  const handleRefresh = () => {
+    window.location.href="/admin"
+  };
+
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/training`)
       .then((res) => res.data)
       .then((data) => setFiles(data));
-  }, []);
+  }, [handleRefresh]);
 
   return (
     <div className="filesList">

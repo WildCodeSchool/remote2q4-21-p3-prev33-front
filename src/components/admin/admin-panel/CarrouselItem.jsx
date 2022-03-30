@@ -17,14 +17,14 @@ const CarrouselItem = ({ id, title, image }) => {
         <img
           className="carrousel-img"
           src={`${process.env.REACT_APP_API_IMG}/${image}`}
-          alt="title"
+          alt={`${title}`}
         />
         <button
           className="carrousel-button"
           type="submit"
           onClick={() => handleDelete(id)}
         >
-          effacer
+          Effacer
         </button>
       </div>
     </div>

@@ -5,12 +5,16 @@ import CarrouselItem from "./CarrouselItem";
 const CarrouselList = () => {
   const [items, setItems] = useState([]);
 
+  const handleRefresh = () => {
+    window.location.href="/admin"
+  };
+
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/carrousel`)
       .then((res) => res.data)
       .then((data) => setItems(data));
-  }, []);
+  }, [handleRefresh]);
 
   return (
     <div className="carrouselList">
