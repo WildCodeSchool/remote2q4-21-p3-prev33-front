@@ -8,7 +8,6 @@ const CarrouselItem = ({ id, title, image }) => {
   const handleDelete = (id) => {
     axios.delete(`${process.env.REACT_APP_API_URL}/carrousel/${id}`);
     navigator("/admin");
-    // window.location.reload(false)
   };
 
   return (
