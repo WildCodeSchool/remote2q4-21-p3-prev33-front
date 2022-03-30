@@ -7,7 +7,8 @@ const CarrouselItem = ({ id, title, image }) => {
 
   const handleDelete = (id) => {
     axios.delete(`${process.env.REACT_APP_API_URL}/carrousel/${id}`);
-    navigator("/");
+    navigator("/admin");
+    // window.location.reload(false)
   };
 
   return (
@@ -17,14 +18,14 @@ const CarrouselItem = ({ id, title, image }) => {
         <img
           className="carrousel-img"
           src={`${process.env.REACT_APP_API_IMG}/${image}`}
-          alt="title"
+          alt={`${title}`}
         />
         <button
           className="carrousel-button"
           type="submit"
           onClick={() => handleDelete(id)}
         >
-          effacer
+          Effacer
         </button>
       </div>
     </div>

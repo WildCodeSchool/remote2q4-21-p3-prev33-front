@@ -4,7 +4,7 @@ import FilesItem from "./FilesItem";
 
 const FilesList = () => {
   const [files, setFiles] = useState([]);
-  const [categoryTraining, setCategoryTraining] = useState("1");
+  const [categoryTraining, setCategoryTraining] = useState("");
   const categories = [
     {
       id: 1,
@@ -40,12 +40,16 @@ const FilesList = () => {
     },
   ];
 
+  const handleRefresh = () => {
+    window.location.href="/admin"
+  };
+
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/training`)
       .then((res) => res.data)
       .then((data) => setFiles(data));
-  }, []);
+  }, [handleRefresh]);
 
   return (
     <div className="filesList">

@@ -29,6 +29,7 @@ const AddCarrousel = () => {
           className="admin-input"
           type="text"
           id="title"
+          placeholder="Entrer un nom d'image"
           onChange={(e) => setTitle(e.target.value)}
         />
         <label className="admin-label" htmlFor="image">
@@ -37,6 +38,7 @@ const AddCarrousel = () => {
         <input
           className="admin-input"
           type="file"
+          accept="image/*"
           id="image"
           onChange={(e) => setImage(e.target.files[0])}
         />
