@@ -36,6 +36,7 @@ const Caroussel = ({ slides }) => {
             key={index}
           >
             {index === current && (
+              console.log(`${process.env.REACT_APP_API_IMG}${slide.image}`),
               <img
                 src={`${process.env.REACT_APP_API_IMG}/${slide.image}`}
                 alt={slide.title}
