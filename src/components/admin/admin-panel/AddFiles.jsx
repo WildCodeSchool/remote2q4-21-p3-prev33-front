@@ -1,11 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
 
 const AddFiles = () => {
-  //   const navigator = useNavigate();
-
   const [title, setTitle] = useState("");
   const [reference, setReference] = useState("");
   const [link, setLink] = useState("");

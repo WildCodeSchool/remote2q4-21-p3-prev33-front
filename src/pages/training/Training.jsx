@@ -14,7 +14,6 @@ const Training = () => {
       .then((res) => res.data)
       .then((data) => setFormation(data));
   }, [params.title]);
-  console.log("Training :" + formation);
   return (
     <div>
       <ItemList />

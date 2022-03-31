@@ -4,6 +4,9 @@ import emailjs from "@emailjs/browser";
 
 export default function SignUp() {
   const form = useRef();
+  const serviceId = process.env.REACT_APP_API_SERVICE_ID;
+  const templateId = process.env.REACT_APP_API_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_API_USER_ID;
 
   const [submitted, setSubmitted] = useState(false);
   const [nameCompany, setNameCompany] = useState("");
@@ -16,22 +19,15 @@ export default function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_p5e23gs",
-        "template_htqfrek",
-        form.current,
-        "-XsXm8CBJ-jyv6f5n"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    console.log("user ID=>" + templateId);
+    emailjs.sendForm(serviceId, templateId, form.current, userId).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     if (
       nameCompany &&
