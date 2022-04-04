@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { Children } from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import NavBar from "./components/navbar/NavBar";
@@ -11,15 +11,16 @@ import PageTest from "./pages/tests/PageTest";
 import About from "./pages/company/About";
 import SignUp from "./pages/signup/SignUp";
 import Login from "./components/login/Login";
-import Register from "./components/register/Register";
+import Register from "./components/admin/admin-panel/Register";
 import Disconnect from "./components/disconnect/Disconnect";
 import AdminPanel from "./components/admin/admin-panel/AdminPanel";
 import AdminRoutes from "./components/admin/admin-routes/AdminRoutes";
+import RegisterRoutes from "./components/admin/admin-routes/RegisterRoutes";
 import UserProvider from "./contexts/UserProvider";
 import Connexion from "./pages/connexion/Connexion";
-import Formation from "./components/files/Pdf";
+import Defaultpage from "./pages/pagedefault/Defaultpage";
 import Training from "./pages/training/Training";
-import AuditDetail from "./pages/audits/AuditDetail"
+import AuditDetail from "./pages/audits/AuditDetail";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/formations/" element={<Formations />} /> 
+          <Route path="/formations/" element={<Formations />} />
           <Route path="/formation/:title" element={<Training />} />
           <Route path="/audits" element={<Audits />} />
           <Route path="/audit/:title" element={<AuditDetail />} />
@@ -38,11 +39,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/connexion" element={<Connexion />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
           <Route path="/disconnect" element={<Disconnect />} />
           <Route path="/admin" element={<AdminRoutes />}>
             <Route index element={<AdminPanel />} />
           </Route>
+          <Route path="/register" element={<RegisterRoutes />}>
+            <Route index element={<Register />} />
+          </Route>
+          <Route path="/*" element={<Defaultpage />} />
         </Routes>
         <Footer />
       </UserProvider>

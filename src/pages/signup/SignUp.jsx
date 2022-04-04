@@ -19,7 +19,6 @@ export default function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("user ID=>" + templateId);
     emailjs.sendForm(serviceId, templateId, form.current, userId).then(
       (result) => {
         console.log(result.text);

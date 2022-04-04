@@ -68,7 +68,7 @@ const AddFiles = () => {
             value={categoryTraining}
             onChange={(e) => setCategoryTraining(e.target.value)}
           >
-            {trainingCategories.map((trainingCategory) => {
+            {trainingCategories.reverse().map((trainingCategory) => {
               return (
                 <option value={trainingCategory.id} key={trainingCategory.id}>
                   {trainingCategory.name}

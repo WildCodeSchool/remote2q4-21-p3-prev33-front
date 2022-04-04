@@ -41,7 +41,7 @@ const FilesList = () => {
   ];
 
   const handleRefresh = () => {
-    window.location.href="/admin"
+    window.location.href = "/admin";
   };
 
   useEffect(() => {

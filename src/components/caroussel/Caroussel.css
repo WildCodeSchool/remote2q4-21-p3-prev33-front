@@ -59,10 +59,10 @@
   }
 
   .image {
-    width: 90%;
+    width: 90vw;
     height: auto;
     border-radius: 10px;
-    margin-left: 5%;
+    margin: 0 auto;
   }
 
   .right-arrow {
