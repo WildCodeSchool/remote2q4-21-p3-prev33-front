@@ -2,10 +2,10 @@ import React from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const FilesItem = ({ file, formation }) => {
+const FilesItem = ({ file }) => {
   const navigator = useNavigate();
 
-  const handleDelete = (id) => {
+  const handleDelete = () => {
     axios.delete(`${process.env.REACT_APP_API_URL}/training/${file.id}`);
     navigator("/admin");
   };

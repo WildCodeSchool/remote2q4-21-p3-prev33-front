@@ -6,7 +6,6 @@ import Training from "../../pages/training/Training";
 import Audits from "../../pages/audits/Audits";
 import About from "../../pages/company/About";
 import PageTest from "../../pages/tests/PageTest";
-import AuditList from "../component_audit/AuditList";
 
 const NavBar = () => {
   const [click, setClick] = useState(true);

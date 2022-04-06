@@ -8,7 +8,9 @@ const Item = ({ menu }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/training_category/${menu.id}/trainings`)
+      .get(
+        `${process.env.REACT_APP_API_URL}/training_category/${menu.id}/trainings`
+      )
       .then((res) => res.data)
       .then((data) => setTrainings(data));
   }, []);
