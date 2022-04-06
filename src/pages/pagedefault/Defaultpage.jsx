@@ -11,8 +11,6 @@ const Defaultpage = () => {
           La page que vous recherchez n'existe pas.
         </h2>
         <img src={LOGO404} alt="logo 404" className="defaultpage-image" />
-
-        <link rel="stylesheet" href="" className="defaultpage-link" />
       </div>
     </div>
   );

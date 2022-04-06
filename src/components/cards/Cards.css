@@ -105,6 +105,13 @@
   text-decoration: underline #e19e20;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .Cards {
+    width: 320px;
+    height: 420px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .Cards {
     width: 290px;

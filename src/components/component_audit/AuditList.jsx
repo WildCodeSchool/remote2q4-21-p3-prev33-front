@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import AuditItem from "./AuditItem";
 
-import "./AuditList.css";
-
 const AuditList = () => {
   const [categories, setCategories] = useState([]);
 

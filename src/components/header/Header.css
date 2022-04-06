@@ -5,8 +5,6 @@
   justify-content: space-between;
   background-color: #e19e20;
   color: #fff;
-  line-height: 0px;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .Header-logo {
@@ -14,16 +12,21 @@
   padding: 10% 0% 10%;
 }
 
-.header-text1 {
+.header-text {
   display: flex;
-  justify-content: center;
-  font-size: xx-large;
+  justify-content: space-evenly;
+  gap: 5vw;
+}
+
+.header-text1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .header-text2 {
-  display: flex;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.6em;
   font-weight: bold;
 }
 
@@ -81,6 +84,66 @@
   padding: 18px 0;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .header-text {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .header-text2 {
+    justify-content: center;
+  }
+
+  .Logo {
+    width: 50px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .Header-logo {
+    width: 90px;
+    top: 0;
+  }
+  .Logo {
+    width: 50px;
+    margin-left: 5px;
+  }
+
+  .header-text {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .header-text1 {
+    font-size: 1.5em;
+  }
+  .header-text2 {
+    font-size: 1.3em;
+  }
+
+  .header-link {
+    font-size: 12px;
+  }
+
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: 0.7em;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .header-phone > a,
+  .header-mail > a {
+    color: #1e4a6d;
+    padding-bottom: 5px;
+  }
+  button.favorite.styled {
+    margin: 5px auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .Header {
     width: 100%;
@@ -90,29 +153,22 @@
   .Header-logo {
     width: 70px;
     top: 0;
-    padding: 10px;
+  }
+  .Logo {
+    margin-left: 5px;
+  }
+
+  .header-text {
+    flex-direction: column;
+    gap: 1vw;
   }
 
   .header-text1 {
-    display: block;
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    line-height: 0.9rem;
-    transform: translate(-40%, -50%);
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 1em;
   }
 
   .header-text2 {
-    display: block;
-    position: absolute;
-    left: 50%;
-    line-height: 1rem;
-    transform: translate(-40%, -120%);
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 0.8em;
   }
 
   .header-link {

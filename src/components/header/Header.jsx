@@ -12,13 +12,13 @@ function Header() {
           <img className="Header-logo" src={logo} alt="logo" />
         </Link>
       </div>
-
-      <div className="header-text1">
-        <p>"Protégeons, ensemble,&nbsp;</p>
-        <p> votre outil de travail"</p>
-      </div>
-      <div className="header-text2">
-        <p>Incendie - Risques Professionnels - Sûreté</p>
+      <div className="header-text">
+        <div className="header-text1">
+          <p>"Protégeons, ensemble,&nbsp;votre outil de travail"</p>
+        </div>
+        <div className="header-text2">
+          <p>Incendie - Risques Professionnels - Sûreté</p>
+        </div>
       </div>
       <div className="header-info">
         <div className="header-phone">

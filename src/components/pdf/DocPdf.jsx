@@ -9,7 +9,7 @@ const DocPdf = ({ formation }) => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 768;
+  const breakpoint = 1200;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -42,14 +42,14 @@ const DocPdf = ({ formation }) => {
         file={`${process.env.REACT_APP_API_FILE}/${formation.link}`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        <Page pageNumber={pageNumber} width={width > breakpoint ? 1200 : 600} />
+        <Page pageNumber={pageNumber} width={width > breakpoint ? 1200 : 700} />
       </Document>
       <div className="piedPagePdf">
         <p>
           Page {pageNumber || (numPages ? 1 : "--")} sur {numPages || "--"}
         </p>
         <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-          Précédent
+          Précédente
         </button>
         <button
           type="button"
