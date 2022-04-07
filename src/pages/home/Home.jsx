@@ -12,7 +12,6 @@ const Home = () => {
       .get(`${process.env.REACT_APP_API_URL}/carrousel`)
       .then((res) => res.data)
       .then((data) => setImage(data));
-      console.log(image);
   }, []);
   return (
     <div className="home">
