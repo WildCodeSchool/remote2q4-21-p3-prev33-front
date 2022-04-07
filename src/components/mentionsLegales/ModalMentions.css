@@ -46,11 +46,17 @@
   color: red;
 }
 
+.modal-close-button {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+}
 .modal-close-button span {
   position: absolute;
   font-size: large;
-  top: 18px;
-  right: 18px;
+  font-weight: 700;
+  top: -12px;
+  right: -4px;
   cursor: pointer;
 }
 
