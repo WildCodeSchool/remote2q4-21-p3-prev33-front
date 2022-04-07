@@ -4,11 +4,12 @@
   height: 50vh;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .image {
-  width: 900px;
+  display: flex;
+  width: 80%;
   height: 300px;
   max-height: 300px;
   border-radius: 10px;
@@ -19,7 +20,7 @@
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 400px;
+  right: 20%;
   font-size: 2rem;
   color: #000;
   z-index: 10;
@@ -31,7 +32,7 @@
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 400px;
+  left: 20%;
   font-size: 2rem;
   color: #000;
   z-index: 10;
@@ -42,8 +43,10 @@
 }
 
 .slide {
+  display: flex;
   opacity: 0;
   transition-duration: 1s ease;
+  justify-content: center;
 }
 
 .slide.active {
@@ -52,40 +55,60 @@
   transform: scale(1.08);
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider {
+    position: relative;
+    height: 5%;
+    margin-top: 30px;
+  }
+
+  .right-arrow {
+    right: 10%;
+  }
+
+  .left-arrow {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .slider {
+    position: relative;
+    height: 5%;
+    margin-top: 20px;
+  }
+  .right-arrow {
+    right: 2%;
+    font-size: 1.5rem;
+  }
+
+  .left-arrow {
+    left: 2%;
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .slider {
     position: relative;
-    height: 4vh;
+    height: 5%;
+    margin-top: 15px;
   }
 
   .image {
     width: 90%;
     height: auto;
     border-radius: 10px;
-    margin-left: 5%;
+    margin: 0 auto;
   }
 
   .right-arrow {
-    top: 250%;
-    right: 32px;
+    top: 120%;
     font-size: 1rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 0 0 10px 5px;
-    border-radius: 20px;
   }
   .left-arrow {
-    top: 250%;
-    left: 32px;
+    top: 120%;
     font-size: 1rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 0 0 10px 5px;
-    border-radius: 20px;
   }
 
   .slide {

@@ -1,6 +1,6 @@
 .ItemList {
-  height: 11vh;
-  margin: 60px auto;
+  height: 18vh;
+  margin: 30px auto;
 }
 
 .ItemList-title {
@@ -13,6 +13,28 @@
   grid-gap: 30px;
   grid-auto-columns: auto;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .ItemList {
+    height: 26vh;
+    margin: 25px auto;
+  }
+  .ItemList-container {
+    display: grid;
+    grid-template-areas: "a a";
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .ItemList {
+    height: 22vh;
+    margin: 15px auto;
+  }
+  .ItemList-container {
+    display: grid;
+    grid-template-areas: "a a";
+  }
 }
 
 @media screen and (max-width: 767px) {

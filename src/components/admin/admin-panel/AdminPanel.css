@@ -1,6 +1,6 @@
 .adminPanel {
   width: 80%;
-  height: 200vh;
+  height: 190vh;
   margin: 0 auto;
 }
 .adminPanel > h1 {
@@ -119,7 +119,6 @@
 }
 .files-ol {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   flex-wrap: wrap;
 }

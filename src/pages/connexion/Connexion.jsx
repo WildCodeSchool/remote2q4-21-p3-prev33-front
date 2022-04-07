@@ -13,9 +13,6 @@ const Connexion = () => {
             <Link className="connexion-link" to="/login">
               Connexion
             </Link>
-            {/* <Link className="connexion-link" to="/register">
-              Créer un compte
-            </Link> */}
           </>
         )}
         {user && (
@@ -25,6 +22,9 @@ const Connexion = () => {
             </Link>
             <Link className="connexion-link" to="/disconnect">
               Deconnexion
+            </Link>
+            <Link className="connexion-link" to="/register">
+              Créer un compte
             </Link>
           </>
         )}

@@ -4,18 +4,22 @@
   text-align: center;
 }
 .formation {
-  display: flex;
+  display: grid;
+  grid-template-areas: "a a a a";
+  grid-gap: 50px;
+  grid-auto-columns: auto;
   justify-content: center;
-  gap: 50px;
 }
 
 .advice {
-  display: flex;
+  display: grid;
+  grid-template-areas: "a a a a";
+  grid-gap: 50px;
+  grid-auto-columns: auto;
   justify-content: center;
-  gap: 50px;
 }
 
-.title {
+/* .title {
   font-size: 4vh;
   text-align: center;
   margin-top: 10vh;
@@ -26,7 +30,8 @@
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
   color: #333333;
   background: #ffffff;
-}
+} */
+
 .cardsformation-title {
   margin-top: 50px;
   margin-bottom: 40px;
@@ -45,6 +50,29 @@
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
   font-size: 40px;
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .formation {
+    display: grid;
+    grid-template-areas: "a a";
+    justify-content: space-evenly;
+  }
+
+  .advice {
+    display: grid;
+    grid-template-areas: "a a";
+    justify-content: space-evenly;
+  }
+  .cardsformation-title-quiz,
+  .cardsformation-title-audit,
+  .cardsformation-title {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .formation {
     display: flex;

@@ -9,7 +9,7 @@ const ItemList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/training_category")
+      .get(`${process.env.REACT_APP_API_URL}/training_category`)
       .then((res) => res.data)
       .then((data) => setCategories(data));
   }, []);

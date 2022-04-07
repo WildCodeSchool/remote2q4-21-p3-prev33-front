@@ -44,10 +44,66 @@
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.53);
+  margin: 5px;
+  background-color: #4caf50;
 }
 
 .buttonDownload a {
   font-size: 20px;
   text-decoration: none;
   color: black;
+}
+.buttonDownload .devis {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+.buttonDownload .devis:hover {
+  background-color: rgba(255, 0, 0, 0.394);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .pdf-h1 {
+    font-size: 1.6em;
+  }
+
+  .pdf-span {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .pdf-h1 {
+    font-size: 1.4em;
+  }
+
+  .pdf-span {
+    font-size: 1.2em;
+  }
+
+  .buttonDownload button {
+    width: 100px;
+    height: 50px;
+  }
+
+  .buttonDownload a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-h1 {
+    font-size: 1.2em;
+  }
+
+  .pdf-span {
+    font-size: 1em;
+  }
+
+  .buttonDownload button {
+    width: 100px;
+    height: 50px;
+  }
+
+  .buttonDownload a {
+    font-size: 15px;
+  }
 }

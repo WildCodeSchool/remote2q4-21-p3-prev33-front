@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/img/logo.png";
 import "./About.css";
 import cv from "../../assets/pdf/CV_alexandre_alonso.pdf";
 

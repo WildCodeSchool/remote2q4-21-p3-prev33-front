@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import SignUp from "../../pages/signup/SignUp";
@@ -8,6 +8,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const DocPdf = ({ formation }) => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 1200;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -36,14 +42,14 @@ const DocPdf = ({ formation }) => {
         file={`${process.env.REACT_APP_API_FILE}/${formation.link}`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        <Page pageNumber={pageNumber} width={1200} />
+        <Page pageNumber={pageNumber} width={width > breakpoint ? 1200 : 700} />
       </Document>
       <div className="piedPagePdf">
         <p>
           Page {pageNumber || (numPages ? 1 : "--")} sur {numPages || "--"}
         </p>
         <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-          Précédent
+          Précédente
         </button>
         <button
           type="button"
@@ -63,6 +69,11 @@ const DocPdf = ({ formation }) => {
           >
             Télécharger le PDF
           </a>
+        </button>
+        <button className="buttonDownload devis" type="button">
+          <NavLink to="/signup" className="header-link" element={<SignUp />}>
+            Demander un devis
+          </NavLink>
         </button>
       </div>
       <div className="buttonTransaction">

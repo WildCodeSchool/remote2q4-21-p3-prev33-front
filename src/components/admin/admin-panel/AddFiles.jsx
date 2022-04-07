@@ -1,11 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
 
 const AddFiles = () => {
-  //   const navigator = useNavigate();
-
   const [title, setTitle] = useState("");
   const [reference, setReference] = useState("");
   const [link, setLink] = useState("");
@@ -71,7 +68,7 @@ const AddFiles = () => {
             value={categoryTraining}
             onChange={(e) => setCategoryTraining(e.target.value)}
           >
-            {trainingCategories.map((trainingCategory) => {
+            {trainingCategories.reverse().map((trainingCategory) => {
               return (
                 <option value={trainingCategory.id} key={trainingCategory.id}>
                   {trainingCategory.name}

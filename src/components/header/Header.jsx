@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo3 from "../../assets/logoprev33.png";
+import logo from "../../assets/img/logo.png";
 import SignUp from "../../pages/signup/SignUp";
 import "./Header.css";
 
@@ -9,16 +9,16 @@ function Header() {
     <div className="Header">
       <div className="Logo">
         <Link to="/">
-          <img className="Header-logo" src={logo3} alt="logo3" />
+          <img className="Header-logo" src={logo} alt="logo" />
         </Link>
       </div>
-
-      <div className="header-text1">
-        <p>"Protégeons, ensemble,&nbsp;</p>
-        <p> votre outil de travail"</p>
-      </div>
-      <div className="header-text2">
-        <p>Incendie - Risques Professionnels - Sûreté</p>
+      <div className="header-text">
+        <div className="header-text1">
+          <p>"Protégeons, ensemble,&nbsp;votre outil de travail"</p>
+        </div>
+        <div className="header-text2">
+          <p>Incendie - Risques Professionnels - Sûreté</p>
+        </div>
       </div>
       <div className="header-info">
         <div className="header-phone">

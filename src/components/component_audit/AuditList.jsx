@@ -2,14 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import AuditItem from "./AuditItem";
 
-import "./AuditList.css";
-
 const AuditList = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/training_category")
+      .get(`${process.env.REACT_APP_API_URL}/training_category`)
       .then((res) => res.data)
       .then((data) => setCategories(data));
   }, []);

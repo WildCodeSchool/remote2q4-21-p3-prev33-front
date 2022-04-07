@@ -62,7 +62,33 @@
   position: relative;
   left: 20%;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about-svg {
+    transform: scale(0.7);
+    transition: 0.6s ease-in;
+  }
+  .about-svg:hover {
+    transform: scale(0.9);
+    transition: 0.6s ease-out;
+  }
+  .about {
+    font-size: 1.1em;
+  }
 
+  .about-card {
+    width: 90%;
+  }
+  .about-p {
+    margin: 3px;
+    border-radius: 5px;
+    line-height: 1.2rem;
+    text-align: left;
+  }
+
+  .about-img {
+    width: 100px;
+  }
+}
 @media screen and (max-width: 767px) {
   .about-cv {
     display: block;
