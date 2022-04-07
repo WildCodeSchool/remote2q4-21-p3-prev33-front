@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
+import SignUp from "../../pages/signup/SignUp";
 import "./DocPdf.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -61,6 +63,13 @@ const DocPdf = ({ formation }) => {
           >
             Télécharger le PDF
           </a>
+        </button>
+      </div>
+      <div className="buttonTransaction">
+        <button className="favorite styled" type="button">
+          <NavLink to="/signup" className="header-link" element={<SignUp />}>
+            Demander un devis
+          </NavLink>
         </button>
       </div>
     </div>
