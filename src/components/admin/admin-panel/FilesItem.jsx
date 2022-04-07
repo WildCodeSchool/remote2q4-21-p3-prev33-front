@@ -27,14 +27,6 @@ const FilesItem = ({ file }) => {
             Effacer
           </button>
         </div>
-
-        <button
-          className="files-button"
-          type="submit"
-          onClick={() => handleDelete(file.id)}
-        >
-          Effacer
-        </button>
       </div>
     </div>
   );
