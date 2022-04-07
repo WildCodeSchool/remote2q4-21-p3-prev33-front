@@ -13,10 +13,19 @@ const FilesItem = ({ file }) => {
   return (
     <div>
       <div className="files-cards">
-        <h3 className="files-h3">{file.title}</h3>
-        <div className="files-category">
-          <span>Catégorie N°</span>
-          {file.training_category_id}
+        <div className="files-all">
+          <h3 className="files-h3">{file.title}</h3>
+          <div className="files-category">
+            <span>Catégorie N°</span>
+            {file.training_category_id}
+          </div>
+          <button
+            className="files-button"
+            type="submit"
+            onClick={() => handleDelete(file.id)}
+          >
+            Effacer
+          </button>
         </div>
 
         <button
