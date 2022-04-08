@@ -15,13 +15,16 @@ const PageTest = () => {
           </h2>
           <div className="pagetest-card">
             <p className="pagetest-p">
-              Il existe 3 tests: - test Domaine Incendie - test Domaine Risques
-              Professionnels - test Domaine Sûreté.
+              Il existe 3 tests : <br /><br />
+              - test Domaine Incendie <br />
+              - test Domaine Risques Professionnels <br />
+              - test Domaine Sûreté
             </p>
+            <br /><br />
             <p className="pagetest-p">
-              Le test domaine incendie est en deux parties: ERP : Etablissements
-              recevant du public / ERT : Etablissements recevant des
-              travailleurs.
+              Le test Domaine incendie est en deux parties : <br /><br />
+              ERP : Etablissements recevant du public <br />
+              ERT : Etablissements recevant des travailleurs
             </p>
           </div>
         </div>

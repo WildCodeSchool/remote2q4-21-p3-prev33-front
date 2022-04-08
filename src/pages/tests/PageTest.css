@@ -12,11 +12,12 @@
 }
 
 .pagetest-presentation {
-  width: 50%;
+  width: 35%;
   margin: 20px auto;
   border-radius: 15px;
   border: 2px solid #252d4a;
   box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 10px;
 }
 .pagetest-card {
   padding: 10px;
@@ -33,6 +34,7 @@
   color: #252d4a;
   text-align: center;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .test-card {
@@ -188,7 +190,7 @@ button:hover {
     margin: 0 auto 25px;
   }
   .pagetest-presentation {
-    width: 80%;
+    width: 85%;
     margin: 20px auto;
   }
   .pagetest-container {
