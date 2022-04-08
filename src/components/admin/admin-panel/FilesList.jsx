@@ -38,7 +38,7 @@ const FilesList = () => {
     {
       id: 8,
       name: "Conseil",
-    },
+    }
   ];
 
   const handleRefresh = () => {
