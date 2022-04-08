@@ -76,13 +76,6 @@ const DocPdf = ({ formation }) => {
           </NavLink>
         </button>
       </div>
-      <div className="buttonTransaction">
-        <button className="favorite styled" type="button">
-          <NavLink to="/signup" className="header-link" element={<SignUp />}>
-            Demander un devis
-          </NavLink>
-        </button>
-      </div>
     </div>
   );
 };
