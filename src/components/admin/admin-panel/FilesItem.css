@@ -1,18 +1,17 @@
-.files-cards{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-right: 50px;
-    columns: 1;
+.files-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 50px;
+  columns: 1;
 }
 
 .files-button {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .files-h3 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
-
