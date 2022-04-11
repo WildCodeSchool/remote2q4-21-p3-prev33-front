@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# About the Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://www.prev33.fr" target="_blank"><img src="https://zupimages.net/up/22/15/f7dl.jpg" alt="" /></a>
 
-## Available Scripts
+Works with repository github 🔗 https://github.com/WildCodeSchool/remote2q4-21-p3-prev33-front.git
 
-In the project directory, you can run:
+Total redesign of an existing website on fire prevention for companies or institutions.
 
-### `npm start`
+# Built With:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    -Langage : JavaScript
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Front-end
 
-### `npm test`
+    -Library: REACT
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Back-end
 
-### `npm run build`
+    - Node.JS
+    - Express
+    - JSON Web Token
+    - Multer
+    - Argon2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Database
+    - MySQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features in place
 
-### `npm run eject`
+    Admin features
+    - I can add an image of the carousel
+    - I can remove an image from the carousel
+    - I can add a new training sheet
+    - I can delete a training sheet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    User features
+    - I can navigate between the different pages of the site
+    - I can access the list of available training sheet by category
+    - I can read detailed information about each training sheet
+    - I can request a quote from a form
+    - I can test my security level for my company
+    - I can visit the website on a mobile-phone and tablet.
+    - I can contact "Prev33" by various methods: email, telephone and social networks
+    - I can locate Prev33 quickly with the map
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Getting Started with this project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    - Clone project with git clone \<url en ssh> nom_de_dossier
+    - cd in the clone directory
+    - Run npm install on your terminal to install all necessary dependancies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Front-end
 
-## Learn More
+    - After clone and npm install
+    - Run npm start to launch the application on your server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Back-end
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - After clone and npm install
+    - Run npm run start to start your server
