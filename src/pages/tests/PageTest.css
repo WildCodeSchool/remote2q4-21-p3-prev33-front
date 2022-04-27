@@ -1,0 +1,299 @@
+.PageTest {
+  margin: 30px auto 0;
+  user-select: none;
+}
+
+.pagetest-container {
+  display: grid;
+  grid-template-areas: "a a";
+  grid-gap: 20px;
+  grid-auto-columns: auto;
+  justify-content: center;
+}
+
+.pagetest-presentation {
+  width: 35%;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 2px solid #252d4a;
+  box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 10px;
+}
+.pagetest-card {
+  padding: 10px;
+  text-align: center;
+}
+
+.pagetest-h2 {
+  margin: 10px 10px;
+  color: #252d4a;
+  text-align: center;
+}
+
+.pagetest-p {
+  color: #252d4a;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.test-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e4a6d;
+  width: 600px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  justify-content: space-around;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.score-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #bcda0a;
+  border-radius: 5px;
+}
+.score-section > p {
+  border-bottom: 2px solid #bcda0a;
+}
+
+.score-resultat {
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.question-title.incendie {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 25px;
+  border: 3px solid #da0a0a;
+  border-radius: 5px;
+}
+
+.question-title.surete {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 25px;
+  border: 3px solid #4caf50;
+  border-radius: 5px;
+}
+
+.question-title.risquePro {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  font-size: 25px;
+  border: 3px solid #03a9f4;
+  border-radius: 5px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+.answer-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-incendie {
+  width: 30%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  margin: 5px 0;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #da0a0a;
+  cursor: pointer;
+}
+.button-surete {
+  width: 30%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  margin: 5px 0;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #4caf50;
+  cursor: pointer;
+}
+
+.button-risquePro {
+  width: 30%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  margin: 5px 0;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #03a9f4;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button-close {
+  width: 20%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  margin: 5px 0;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #bcda0a;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .test-card {
+    width: 85%;
+    margin: 0 auto 25px;
+  }
+  .pagetest-presentation {
+    width: 85%;
+    margin: 20px auto;
+  }
+  .pagetest-container {
+    display: grid;
+    grid-template-areas: "a";
+    grid-gap: 1px;
+    grid-auto-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .PageTest {
+    margin: 60px auto 0;
+    user-select: none;
+  }
+  .pagetest-h2 {
+    font-size: 20px;
+  }
+
+  .pagetest-p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .test-card {
+    width: 80%;
+    margin: 0 auto 25px;
+  }
+  .pagetest-presentation {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: 2px solid #252d4a;
+    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+  }
+  .pagetest-container {
+    display: grid;
+    grid-template-areas: "a";
+    grid-gap: 1px;
+    grid-auto-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-count {
+    font-size: 20px;
+  }
+
+  .question-title.incendie {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #da0a0a;
+    border-radius: 0;
+  }
+
+  .question-title.surete {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #4caf50;
+    border-radius: 0;
+  }
+
+  .question-title.risquePro {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #03a9f4;
+    border-radius: 0;
+  }
+  .score-section {
+    font-size: 20px;
+  }
+  .score-resultat {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+  }
+
+  .button-incendie,
+  .button-surete,
+  .button-risquePro {
+    width: 50%;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .button-close {
+    width: 50%;
+    font-size: 14px;
+  }
+}

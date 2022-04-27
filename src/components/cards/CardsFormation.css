@@ -1,0 +1,111 @@
+.CardsFormation {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.formation {
+  display: grid;
+  grid-template-areas: "a a a a";
+  grid-gap: 50px;
+  grid-auto-columns: auto;
+  justify-content: center;
+}
+
+.advice {
+  display: grid;
+  grid-template-areas: "a a a a";
+  grid-gap: 50px;
+  grid-auto-columns: auto;
+  justify-content: center;
+}
+
+/* .title {
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  color: #ffffff;
+  color: #333333;
+  background: #ffffff;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+  background: #ffffff;
+} */
+
+.cardsformation-title {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 40px;
+}
+.cardsformation-title-audit {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 40px;
+}
+.cardsformation-title-quiz {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 40px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .formation {
+    display: grid;
+    grid-template-areas: "a a";
+    justify-content: space-evenly;
+  }
+
+  .advice {
+    display: grid;
+    grid-template-areas: "a a";
+    justify-content: space-evenly;
+  }
+  .cardsformation-title-quiz,
+  .cardsformation-title-audit,
+  .cardsformation-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardsformation-title,
+  .cardsformation-title-audit,
+  .cardsformation-title-quiz {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+
+  .cardsformation-title-audit {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+
+  .cardsformation-title-quiz {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+}
