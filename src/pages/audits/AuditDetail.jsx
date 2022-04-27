@@ -10,7 +10,7 @@ const AuditDetail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/training/training/${params.title}`)
+      .get(`${process.env.REACT_APP_API_URL}/training/training/${params.title}`)
       .then((res) => res.data)
       .then((data) => setAudit(data));
   }, [params.title]);
