@@ -15,8 +15,6 @@ const AuditDetail = () => {
       .then((data) => setAudit(data));
   }, [params.title]);
 
-  console.log(audit);
-
   return (
     <div>
       <AuditList />
